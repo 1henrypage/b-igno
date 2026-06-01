@@ -1,0 +1,38 @@
+
+run_name: "darcy_piecewise_5v1000"
+artifact_root: "runs"
+seed: 10086
+
+problem:
+  type: "darcy_piecewise_5v1000"
+  train_data: "./data/darcy_piecewise_5v1000/pwc_train_data10000.mat"
+  test_data: "./data/darcy_piecewise_5v1000/pwc_test_in.mat"
+
+training:
+  epochs: 3000
+  batch_size: 25
+  epoch_show: 50
+
+  loss_weights:
+    pde: 1.0
+    data: 1.0
+  optimizer:
+    type: Adam
+    lr: 0.0005
+    weight_decay: 0.0001
+  scheduler:
+    type: StepLR
+    step_size: 600
+    gamma: 0.5
+  nf:
+    mode: separate
+    epochs: 4000
+    batch_size: 128
+    optimizer:
+      type: Adam
+      lr: 0.001
+      weight_decay: 0.0001
+    scheduler:
+      type: StepLR
+      step_size: 800
+      gamma: 0.333

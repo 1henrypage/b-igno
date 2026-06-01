@@ -1,0 +1,29 @@
+
+run_name: "darcy_continuous"
+artifact_root: "runs"
+seed: 10086
+
+problem:
+  type: "darcy_continuous"
+  train_data: "./data/darcy_continuous/smh_train.mat"
+  test_data: "./data/darcy_continuous/smh_test_in.mat"
+
+training:
+  epochs: 2000
+  batch_size: 50
+  epoch_show: 100
+
+  loss_weights:
+    pde: 1.0
+    data: 0.25
+  optimizer:
+    type: Adam
+    lr: 0.0005
+    weight_decay: 0.0001
+  scheduler:
+    type: StepLR
+    step_size: 400
+    gamma: 0.5
+  nf:
+    mode: joint
+    loss_weight: 0.0125

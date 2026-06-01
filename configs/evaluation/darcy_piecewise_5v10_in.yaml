@@ -1,0 +1,47 @@
+# Evaluation Configuration for Darcy Piecewise Inverse Problem
+# All models are loaded from pretrained checkpoint
+
+run_name: "darcy_piecewise_in_eval"
+seed: 10086
+
+problem:
+  type: "darcy_piecewise_5v10"
+  test_data: "./data/darcy_piecewise_5v10/pwc_test_in.mat"
+
+# REQUIRED: Pretrained model weights (contains all models: enc, u, a, s1, s2, nf)
+pretrained:
+  path: "./runs/final_darcy_piecewise_updated_dims/weights/best.pt"
+
+# Evaluation settings
+evaluation:
+  method: "igno"  # "igno" for gradient-based inversion
+
+  # Batch size for parallel inversion (significant speedup)
+  # Set to large value to process all samples at once (memory permitting)
+  batch_size: 50
+
+  # Observation setup
+  n_obs: 100              # Number of observation points
+  obs_sampling: "random"  # "random", "grid"
+
+  # Noise (SNR-based, same as IGNO paper)
+  # Set to null for clean observations
+  snr_db: null            # 20, 25, 50, 100 are common values
+
+  # IGNO inversion parameters
+  inversion:
+    epochs: 100
+    loss_weights:
+      pde: 1.0
+      data: 1.0
+    optimizer:
+      type: Adam
+      lr: 0.1
+      weight_decay: 0.0
+    scheduler:
+      type: StepLR
+      step_size: 40
+      gamma: 0.1
+
+  # Output directory for results
+  results_dir: "./results"

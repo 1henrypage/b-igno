@@ -1,0 +1,41 @@
+[project]
+name = "B-IGNO"
+version = "0.1.0"
+description = "JAX port of IGNO"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "flax>=0.8.4",
+    "h5py>=3.10.0",
+    "jupytext>=1.16.0",
+    "ipykernel>=7.1.0",
+    "jupyter>=1.0.0",
+    "matplotlib>=3.8.0",
+    "numpy>=1.26.0,<2.0",
+    "numpyro>=0.19.0",
+    "optax>=0.2.2",
+    "pandas>=2.0.0",
+    "pyyaml>=6.0",
+    "scienceplots>=2.1.0",
+    "scipy>=1.12.0",
+    "tensorboard>=2.15.0",
+    "tensorboardx>=2.6.0",
+    "tqdm>=4.66.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "jax[cuda12]==0.4.26",
+]
+slurm = [
+    "jax[cuda12_local]==0.4.35",
+]
+
+[tool.uv]
+conflicts = [
+    [
+        { extra = "dev" },
+        { extra = "slurm" },
+    ],
+]

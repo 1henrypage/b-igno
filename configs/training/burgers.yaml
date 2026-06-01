@@ -1,0 +1,38 @@
+
+run_name: "burgers"
+artifact_root: "runs"
+seed: 10086
+
+problem:
+  type: "burgers"
+  train_data: "./data/burgers/viscid_train.mat"
+  test_data: "./data/burgers/viscid_test_in.mat"
+
+training:
+  epochs: 5000
+  batch_size: 50
+  epoch_show: 50
+
+  loss_weights:
+    pde: 1.0
+    data: 10.0
+  optimizer:
+    type: Adam
+    lr: 0.001
+    weight_decay: 0.0001
+  scheduler:
+    type: StepLR
+    step_size: 1000
+    gamma: 0.3333
+  nf:
+    mode: separate
+    epochs: 300
+    batch_size: 128
+    optimizer:
+      type: Adam
+      lr: 0.001
+      weight_decay: 0.0
+    scheduler:
+      type: StepLR
+      step_size: 100
+      gamma: 0.333

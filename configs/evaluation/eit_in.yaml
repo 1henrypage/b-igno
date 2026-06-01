@@ -1,0 +1,47 @@
+# Evaluation Configuration for EIT Inverse Problem
+# All models are loaded from pretrained checkpoint
+
+run_name: "eit_in_eval"
+seed: 10086
+
+problem:
+  type: "eit"
+  test_data: "./data/eit/inverse_EIT_in.mat"
+
+# REQUIRED: Pretrained model weights (contains all models: enc, u, a, nf)
+pretrained:
+  path: "./runs/final_eit/weights/best.pt"
+
+# Evaluation settings
+evaluation:
+  method: "igno"  # "igno" for gradient-based inversion
+
+  # Batch size for parallel inversion (significant speedup)
+  # Set to large value to process all samples at once (memory permitting)
+  batch_size: 50
+
+  # Observation setup
+  n_obs: 124              # Number of observation points
+  obs_sampling: "random"  # "random", "grid"
+
+  # Noise (SNR-based, same as IGNO paper)
+  # Set to null for clean observations
+  snr_db: null            # 20, 25, 50, 100 are common values
+
+  # IGNO inversion parameters
+  inversion:
+    epochs: 100
+    loss_weights:
+      pde: 1.0
+      data: 100.0
+    optimizer:
+      type: Adam
+      lr: 0.01
+      weight_decay: 0.0
+    scheduler:
+      type: StepLR
+      step_size: 25
+      gamma: 0.25
+
+  # Output directory for results
+  results_dir: "./results"
