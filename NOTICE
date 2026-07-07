@@ -1,0 +1,32 @@
+J-IGNO — Bayesian Inverse Generative Neural Operator
+Copyright 2025-2026 Henry Page
+
+This product is licensed under the Apache License, Version 2.0.
+You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+
+---
+
+This software is a JAX port and extension of IGNO, and draws on the
+following third-party works distributed under the Apache License 2.0:
+
+IGNO (Inverse Generative Neural Operator)
+  Copyright Yaohua Zang
+  Source: https://github.com/yaohua32/IGNO
+  License: Apache License 2.0
+
+  Reference:
+    Gang Bao and Yaohua Zang.
+    "A unified physics-informed generative operator framework for general
+    inverse problems." arXiv:2511.03241 [cs.LG], 2025.
+
+DGenNO (Deep Generative Neural Operator)
+  Copyright Yaohua Zang and Phaedon-Stelios Koutsourelakis
+  Source: https://github.com/pkmtum/DGenNO
+  License: Apache License 2.0
+
+  Reference:
+    Yaohua Zang and Phaedon-Stelios Koutsourelakis.
+    "DGenNO: a novel physics-aware neural operator for solving forward and
+    inverse PDE problems based on deep, generative probabilistic modeling."
+    Journal of Computational Physics, 538:114137, 2025.
+    https://doi.org/10.1016/j.jcp.2025.114137

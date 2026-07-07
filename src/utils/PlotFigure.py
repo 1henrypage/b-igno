@@ -322,7 +322,8 @@ class Plot:
             if vmax is not None:
                 kwargs['vmax'] = vmax
         cntr = ax.contourf(x_plot, y_plot, z_plot, **kwargs)
-        fig.colorbar(cntr, ax=ax, fraction=0.046, pad=0.04)
+        cbar = fig.colorbar(cntr, ax=ax, fraction=0.046, pad=0.04)
+        cbar.ax.tick_params(labelsize=11)
         return cntr
 
     @staticmethod
@@ -359,7 +360,8 @@ class Plot:
             if vmax is not None:
                 kwargs['vmax'] = vmax
         im = ax.imshow(g, **kwargs)
-        fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+        cbar = fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+        cbar.ax.tick_params(labelsize=11)
         return im
 
     @staticmethod

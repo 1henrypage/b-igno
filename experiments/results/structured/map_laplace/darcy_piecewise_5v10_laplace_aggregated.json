@@ -1,0 +1,41 @@
+{
+  "experiment": "map_laplace",
+  "problem": "darcy_piecewise_5v10",
+  "generated_at": "2026-06-18T12:17:10",
+  "total_runs": 6,
+  "valid_runs": 0,
+  "failed_runs": 6,
+  "failed_details": [
+    {
+      "seed": 7,
+      "test_idx": 1,
+      "n_negative_eigenvalues": 42
+    },
+    {
+      "seed": 7,
+      "test_idx": 2,
+      "n_negative_eigenvalues": 41
+    },
+    {
+      "seed": 42,
+      "test_idx": 2,
+      "n_negative_eigenvalues": 41
+    },
+    {
+      "seed": 42,
+      "test_idx": 0,
+      "n_negative_eigenvalues": 48
+    },
+    {
+      "seed": 42,
+      "test_idx": 1,
+      "n_negative_eigenvalues": 45
+    },
+    {
+      "seed": 123,
+      "test_idx": 2,
+      "n_negative_eigenvalues": 43
+    }
+  ],
+  "per_instance": {}
+}

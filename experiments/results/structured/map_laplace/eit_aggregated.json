@@ -1,0 +1,1126 @@
+{
+  "experiment": "map_laplace",
+  "problem": "eit",
+  "experiment_type": "single",
+  "generated_at": "2026-06-21T22:30:05",
+  "per_instance": {
+    "(0, None)": {
+      "n_seeds": 3,
+      "seeds": [
+        7,
+        42,
+        123
+      ],
+      "consistency_tests": [
+        {
+          "metric": "a_err",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "a_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "u_err",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "ess_min",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "ess_min: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "rhat_max",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "rhat_max: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "coverage_95",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "coverage_95: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "ci_width",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "ci_width: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "crps_a",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "crps_a: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "mean_std",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "mean_std: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "nll_a",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "nll_a: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "n_div",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "n_div: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "map_a_err",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "map_a_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "map_u_err",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "map_u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "chi2_ppc_pvalue",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "chi2_ppc_pvalue: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "spearman_rho_error_std",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "spearman_rho_error_std: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "spearman_pvalue_error_std",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "spearman_pvalue_error_std: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        }
+      ],
+      "metric_summaries": {
+        "a_err": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "u_err": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "ess_min": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "rhat_max": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "coverage_95": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "ci_width": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "crps_a": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "mean_std": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "nll_a": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "n_div": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "map_a_err": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "map_u_err": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "chi2_ppc_pvalue": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "spearman_rho_error_std": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "spearman_pvalue_error_std": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        }
+      }
+    },
+    "(1, None)": {
+      "n_seeds": 3,
+      "seeds": [
+        7,
+        42,
+        123
+      ],
+      "consistency_tests": [
+        {
+          "metric": "a_err",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "a_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "u_err",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "ess_min",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "ess_min: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "rhat_max",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "rhat_max: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "coverage_95",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "coverage_95: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "ci_width",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "ci_width: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "crps_a",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "crps_a: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "mean_std",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "mean_std: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "nll_a",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "nll_a: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "n_div",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "n_div: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "map_a_err",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "map_a_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "map_u_err",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "map_u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "chi2_ppc_pvalue",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "chi2_ppc_pvalue: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "spearman_rho_error_std",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "spearman_rho_error_std: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "spearman_pvalue_error_std",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "spearman_pvalue_error_std: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        }
+      ],
+      "metric_summaries": {
+        "a_err": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "u_err": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "ess_min": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "rhat_max": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "coverage_95": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "ci_width": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "crps_a": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "mean_std": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "nll_a": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "n_div": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "map_a_err": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "map_u_err": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "chi2_ppc_pvalue": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "spearman_rho_error_std": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "spearman_pvalue_error_std": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        }
+      }
+    },
+    "(2, None)": {
+      "n_seeds": 3,
+      "seeds": [
+        7,
+        42,
+        123
+      ],
+      "consistency_tests": [
+        {
+          "metric": "a_err",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "a_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "u_err",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "ess_min",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "ess_min: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "rhat_max",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "rhat_max: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "coverage_95",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "coverage_95: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "ci_width",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "ci_width: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "crps_a",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "crps_a: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "mean_std",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "mean_std: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "nll_a",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "nll_a: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "n_div",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "n_div: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "map_a_err",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "map_a_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "map_u_err",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "map_u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "chi2_ppc_pvalue",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "chi2_ppc_pvalue: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "spearman_rho_error_std",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "spearman_rho_error_std: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        },
+        {
+          "metric": "spearman_pvalue_error_std",
+          "cv": NaN,
+          "consistent": false,
+          "summary": {
+            "mean": NaN,
+            "std": NaN,
+            "min": NaN,
+            "max": NaN,
+            "n": 0,
+            "values": []
+          },
+          "interpretation": "spearman_pvalue_error_std: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+        }
+      ],
+      "metric_summaries": {
+        "a_err": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "u_err": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "ess_min": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "rhat_max": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "coverage_95": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "ci_width": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "crps_a": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "mean_std": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "nll_a": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "n_div": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "map_a_err": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "map_u_err": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "chi2_ppc_pvalue": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "spearman_rho_error_std": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        },
+        "spearman_pvalue_error_std": {
+          "mean": NaN,
+          "std": NaN,
+          "min": NaN,
+          "max": NaN,
+          "n": 0,
+          "values": []
+        }
+      }
+    }
+  },
+  "cross_instance": {
+    "a_err": {
+      "mean": NaN,
+      "std": NaN,
+      "n": 0,
+      "values": []
+    },
+    "u_err": {
+      "mean": NaN,
+      "std": NaN,
+      "n": 0,
+      "values": []
+    },
+    "ess_min": {
+      "mean": NaN,
+      "std": NaN,
+      "n": 0,
+      "values": []
+    },
+    "rhat_max": {
+      "mean": NaN,
+      "std": NaN,
+      "n": 0,
+      "values": []
+    },
+    "coverage_95": {
+      "mean": NaN,
+      "std": NaN,
+      "n": 0,
+      "values": []
+    },
+    "ci_width": {
+      "mean": NaN,
+      "std": NaN,
+      "n": 0,
+      "values": []
+    },
+    "crps_a": {
+      "mean": NaN,
+      "std": NaN,
+      "n": 0,
+      "values": []
+    },
+    "mean_std": {
+      "mean": NaN,
+      "std": NaN,
+      "n": 0,
+      "values": []
+    },
+    "nll_a": {
+      "mean": NaN,
+      "std": NaN,
+      "n": 0,
+      "values": []
+    },
+    "n_div": {
+      "mean": NaN,
+      "std": NaN,
+      "n": 0,
+      "values": []
+    },
+    "map_a_err": {
+      "mean": NaN,
+      "std": NaN,
+      "n": 0,
+      "values": []
+    },
+    "map_u_err": {
+      "mean": NaN,
+      "std": NaN,
+      "n": 0,
+      "values": []
+    },
+    "chi2_ppc_pvalue": {
+      "mean": NaN,
+      "std": NaN,
+      "n": 0,
+      "values": []
+    },
+    "spearman_rho_error_std": {
+      "mean": NaN,
+      "std": NaN,
+      "n": 0,
+      "values": []
+    },
+    "spearman_pvalue_error_std": {
+      "mean": NaN,
+      "std": NaN,
+      "n": 0,
+      "values": []
+    }
+  }
+}

@@ -1,0 +1,70 @@
+run_name: eit
+artifact_root: runs
+seed: 10086
+problem:
+  type: eit
+  train_data: ./data/eit/train_withData_EIT.mat
+  test_data: ./data/eit/test_EIT.mat
+pretrained: null
+training:
+  epochs: 2000
+  batch_size: 100
+  epoch_show: 100
+  loss_weights:
+    pde: 1.0
+    data: 1.0
+    nf: 0.0
+  optimizer:
+    type: Adam
+    lr: 0.0005
+    weight_decay: 0.0001
+  scheduler:
+    type: StepLR
+    step_size: 200
+    gamma: 0.5
+    eta_min: null
+    pct_start: 0.3
+    div_factor: 25.0
+    final_div_factor: 10000.0
+  nf:
+    mode: separate
+    loss_weight: 1.0
+    epochs: 2000
+    batch_size: 320
+    optimizer:
+      type: Adam
+      lr: 0.001
+      weight_decay: 0.0
+    scheduler:
+      type: StepLR
+      step_size: 400
+      gamma: 0.333
+      eta_min: null
+      pct_start: 0.3
+      div_factor: 25.0
+      final_div_factor: 10000.0
+evaluation:
+  method: igno
+  batch_size: 200
+  n_obs: 100
+  obs_sampling: random
+  snr_db: null
+  inversion:
+    epochs: 500
+    loss_weights:
+      pde: 1.0
+      data: 1.0
+      nf: 1.0
+    optimizer:
+      type: Adam
+      lr: 0.001
+      weight_decay: 0.0
+    scheduler:
+      type: null
+      step_size: null
+      gamma: null
+      eta_min: null
+      pct_start: 0.3
+      div_factor: 25.0
+      final_div_factor: 10000.0
+  results_dir: results

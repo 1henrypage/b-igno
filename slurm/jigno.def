@@ -1,0 +1,29 @@
+Bootstrap: docker
+From: nvidia/cuda:12.6.3-cudnn-devel-ubuntu22.04
+
+%labels
+    Author Henry Page
+    Project J-IGNO
+
+%environment
+    export CUDA_HOME=/usr/local/cuda
+    export PATH=$CUDA_HOME/bin:/usr/local/bin:$PATH
+    export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
+    export XLA_FLAGS="--xla_gpu_cuda_data_dir=$CUDA_HOME"
+    export XLA_PYTHON_CLIENT_PREALLOCATE=false
+
+%post
+    apt-get update && apt-get install -y --no-install-recommends \
+        build-essential \
+        curl \
+        git \
+        ca-certificates \
+        python3 \
+        python3-pip \
+        && rm -rf /var/lib/apt/lists/*
+    
+    # Install UV to /usr/local/bin
+    curl -LsSf https://astral.sh/uv/install.sh | env UV_INSTALL_DIR=/usr/local/bin sh
+
+%runscript
+    exec uv "$@"

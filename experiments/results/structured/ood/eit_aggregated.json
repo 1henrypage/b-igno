@@ -1,0 +1,4735 @@
+{
+  "experiment": "ood",
+  "problem": "eit",
+  "experiment_type": "comparison",
+  "generated_at": "2026-06-21T22:30:05",
+  "per_instance": {
+    "(0, None)": {
+      "n_seeds": 3,
+      "seeds": [
+        7,
+        42,
+        123
+      ],
+      "consistency_tests": {
+        "in_domain_data_only": [
+          {
+            "metric": "a_err",
+            "cv": 0.009814797411932651,
+            "consistent": true,
+            "summary": {
+              "mean": 0.00444119702309369,
+              "std": 4.358944904814295e-05,
+              "min": 0.004397382003063072,
+              "max": 0.004484557343719921,
+              "n": 3,
+              "values": [
+                0.004441651722498077,
+                0.004397382003063072,
+                0.004484557343719921
+              ]
+            },
+            "interpretation": "a_err: mean=0.0044, std=0.0000, CV=0.98% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ess_min",
+            "cv": 0.2964469934410881,
+            "consistent": false,
+            "summary": {
+              "mean": 3762.9931884070224,
+              "std": 1115.5280170425558,
+              "min": 3082.591108179036,
+              "max": 5050.396695643524,
+              "n": 3,
+              "values": [
+                3155.9917613985053,
+                3082.591108179036,
+                5050.396695643524
+              ]
+            },
+            "interpretation": "ess_min: mean=3762.9932, std=1115.5280, CV=29.64% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "rhat_max",
+            "cv": 0.0006036249119926529,
+            "consistent": true,
+            "summary": {
+              "mean": 1.0011502941409474,
+              "std": 0.0006043192581922479,
+              "min": 1.0005170688439633,
+              "max": 1.0017208183060482,
+              "n": 3,
+              "values": [
+                1.0017208183060482,
+                1.0005170688439633,
+                1.001212995272831
+              ]
+            },
+            "interpretation": "rhat_max: mean=1.0012, std=0.0006, CV=0.06% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "coverage_95",
+            "cv": 0.06018813969677214,
+            "consistent": true,
+            "summary": {
+              "mean": 0.9508463541666666,
+              "std": 0.05722967319474981,
+              "min": 0.884765625,
+              "max": 0.984375,
+              "n": 3,
+              "values": [
+                0.9833984375,
+                0.984375,
+                0.884765625
+              ]
+            },
+            "interpretation": "coverage_95: mean=0.9508, std=0.0572, CV=6.02% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ci_width",
+            "cv": 0.2681550973605297,
+            "consistent": false,
+            "summary": {
+              "mean": 0.0829127879786664,
+              "std": 0.022233486732852248,
+              "min": 0.05724107867374242,
+              "max": 0.09597322740916625,
+              "n": 3,
+              "values": [
+                0.09552405785309054,
+                0.09597322740916625,
+                0.05724107867374242
+              ]
+            },
+            "interpretation": "ci_width: mean=0.0829, std=0.0222, CV=26.82% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "crps_a",
+            "cv": 0.012264411730909348,
+            "consistent": true,
+            "summary": {
+              "mean": 0.01013544274525754,
+              "std": 0.00012430524290289662,
+              "min": 0.009991970543387105,
+              "max": 0.010210865156134345,
+              "n": 3,
+              "values": [
+                0.010210865156134345,
+                0.010203492536251165,
+                0.009991970543387105
+              ]
+            },
+            "interpretation": "crps_a: mean=0.0101, std=0.0001, CV=1.23% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "mean_std",
+            "cv": 0.2684893497594677,
+            "consistent": false,
+            "summary": {
+              "mean": 0.02116990443689477,
+              "std": 0.005683893876731947,
+              "min": 0.014607125838814045,
+              "max": 0.02451534376623281,
+              "n": 3,
+              "values": [
+                0.02438724370563745,
+                0.02451534376623281,
+                0.014607125838814045
+              ]
+            },
+            "interpretation": "mean_std: mean=0.0212, std=0.0057, CV=26.85% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "nll_a",
+            "cv": 0.0019571817041648355,
+            "consistent": true,
+            "summary": {
+              "mean": -2.5562676491967182,
+              "std": 0.005003080273956271,
+              "min": -2.562032179062167,
+              "max": -2.553056053426671,
+              "n": 3,
+              "values": [
+                -2.553056053426671,
+                -2.553714715101317,
+                -2.562032179062167
+              ]
+            },
+            "interpretation": "nll_a: mean=-2.5563, std=0.0050, CV=0.20% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "n_div",
+            "cv": 1.07854777646725,
+            "consistent": false,
+            "summary": {
+              "mean": 2.3333333333333335,
+              "std": 2.5166114784235836,
+              "min": 0.0,
+              "max": 5.0,
+              "n": 3,
+              "values": [
+                2.0,
+                5.0,
+                0.0
+              ]
+            },
+            "interpretation": "n_div: mean=2.3333, std=2.5166, CV=107.85% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_a_err",
+            "cv": 0.1141957839074847,
+            "consistent": true,
+            "summary": {
+              "mean": 0.052930706491072975,
+              "std": 0.0060444635205250665,
+              "min": 0.04704749956727028,
+              "max": 0.059124454855918884,
+              "n": 3,
+              "values": [
+                0.04704749956727028,
+                0.059124454855918884,
+                0.052620165050029755
+              ]
+            },
+            "interpretation": "map_a_err: mean=0.0529, std=0.0060, CV=11.42% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "map_u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "chi2_ppc_pvalue",
+            "cv": 0.016762149117195205,
+            "consistent": true,
+            "summary": {
+              "mean": 0.9904151275566034,
+              "std": 0.016601486056029697,
+              "min": 0.9712453826698103,
+              "max": 1.0,
+              "n": 3,
+              "values": [
+                1.0,
+                1.0,
+                0.9712453826698103
+              ]
+            },
+            "interpretation": "chi2_ppc_pvalue: mean=0.9904, std=0.0166, CV=1.68% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_rho_error_std",
+            "cv": 0.18260931407181552,
+            "consistent": true,
+            "summary": {
+              "mean": 0.29051206771690147,
+              "std": 0.0530502094153682,
+              "min": 0.2574529048351334,
+              "max": 0.3517030814140619,
+              "n": 3,
+              "values": [
+                0.26238021690150914,
+                0.2574529048351334,
+                0.3517030814140619
+              ]
+            },
+            "interpretation": "spearman_rho_error_std: mean=0.2905, std=0.0531, CV=18.26% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_pvalue_error_std",
+            "cv": 1.261322283333652,
+            "consistent": false,
+            "summary": {
+              "mean": 2.3855381595232375e-17,
+              "std": 3.0089324383494076e-17,
+              "min": 3.506034936425914e-31,
+              "max": 5.765904136714824e-17,
+              "n": 3,
+              "values": [
+                1.3907103418548533e-17,
+                5.765904136714824e-17,
+                3.506034936425914e-31
+              ]
+            },
+            "interpretation": "spearman_pvalue_error_std: mean=0.0000, std=0.0000, CV=126.13% \u2192 INCONSISTENT (threshold 20%)"
+          }
+        ],
+        "in_domain_physics": [
+          {
+            "metric": "a_err",
+            "cv": 0.02727375315701777,
+            "consistent": true,
+            "summary": {
+              "mean": 0.004076922154662987,
+              "std": 0.00011119296848665532,
+              "min": 0.004011226165374231,
+              "max": 0.004205304980570119,
+              "n": 3,
+              "values": [
+                0.004014235318044608,
+                0.004011226165374231,
+                0.004205304980570119
+              ]
+            },
+            "interpretation": "a_err: mean=0.0041, std=0.0001, CV=2.73% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ess_min",
+            "cv": 0.23590823649901022,
+            "consistent": false,
+            "summary": {
+              "mean": 8271.676502073684,
+              "std": 1951.3566164945041,
+              "min": 6019.505038642259,
+              "max": 9457.640603972188,
+              "n": 3,
+              "values": [
+                9337.883863606603,
+                9457.640603972188,
+                6019.505038642259
+              ]
+            },
+            "interpretation": "ess_min: mean=8271.6765, std=1951.3566, CV=23.59% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "rhat_max",
+            "cv": 7.277061554175634e-05,
+            "consistent": true,
+            "summary": {
+              "mean": 1.0003594020764772,
+              "std": 7.279676945208858e-05,
+              "min": 1.0003152665168817,
+              "max": 1.0004434247505694,
+              "n": 3,
+              "values": [
+                1.00031951496198,
+                1.0003152665168817,
+                1.0004434247505694
+              ]
+            },
+            "interpretation": "rhat_max: mean=1.0004, std=0.0001, CV=0.01% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "coverage_95",
+            "cv": 0.08826375011794405,
+            "consistent": true,
+            "summary": {
+              "mean": 0.919921875,
+              "std": 0.08119575450303056,
+              "min": 0.826171875,
+              "max": 0.9677734375,
+              "n": 3,
+              "values": [
+                0.9658203125,
+                0.9677734375,
+                0.826171875
+              ]
+            },
+            "interpretation": "coverage_95: mean=0.9199, std=0.0812, CV=8.83% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ci_width",
+            "cv": 0.252051838803949,
+            "consistent": false,
+            "summary": {
+              "mean": 0.06924464986927055,
+              "std": 0.017453241326885267,
+              "min": 0.04909173468945799,
+              "max": 0.07942425846962203,
+              "n": 3,
+              "values": [
+                0.07942425846962203,
+                0.07921795644873166,
+                0.04909173468945799
+              ]
+            },
+            "interpretation": "ci_width: mean=0.0692, std=0.0175, CV=25.21% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "crps_a",
+            "cv": 0.00938315683321051,
+            "consistent": true,
+            "summary": {
+              "mean": 0.009269397978502446,
+              "std": 8.697621498173291e-05,
+              "min": 0.009198020707292032,
+              "max": 0.009366273425092251,
+              "n": 3,
+              "values": [
+                0.009198020707292032,
+                0.009243899803123058,
+                0.009366273425092251
+              ]
+            },
+            "interpretation": "crps_a: mean=0.0093, std=0.0001, CV=0.94% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "mean_std",
+            "cv": 0.25184966617455795,
+            "consistent": false,
+            "summary": {
+              "mean": 0.017673848357296944,
+              "std": 0.004451152808804995,
+              "min": 0.012534167007735547,
+              "max": 0.02026644965730319,
+              "n": 3,
+              "values": [
+                0.020220928406852093,
+                0.02026644965730319,
+                0.012534167007735547
+              ]
+            },
+            "interpretation": "mean_std: mean=0.0177, std=0.0045, CV=25.18% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "nll_a",
+            "cv": 0.03665566451368638,
+            "consistent": true,
+            "summary": {
+              "mean": -2.61951100371159,
+              "std": 0.09601991654196193,
+              "min": -2.6760733066868507,
+              "max": -2.5086444189785837,
+              "n": 3,
+              "values": [
+                -2.6760733066868507,
+                -2.6738152854693356,
+                -2.5086444189785837
+              ]
+            },
+            "interpretation": "nll_a: mean=-2.6195, std=0.0960, CV=3.67% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "n_div",
+            "cv": Infinity,
+            "consistent": false,
+            "summary": {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0.0,
+              "max": 0.0,
+              "n": 3,
+              "values": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "interpretation": "n_div: mean=0.0000, std=0.0000, CV=inf% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_a_err",
+            "cv": 0.1141957839074847,
+            "consistent": true,
+            "summary": {
+              "mean": 0.052930706491072975,
+              "std": 0.0060444635205250665,
+              "min": 0.04704749956727028,
+              "max": 0.059124454855918884,
+              "n": 3,
+              "values": [
+                0.04704749956727028,
+                0.059124454855918884,
+                0.052620165050029755
+              ]
+            },
+            "interpretation": "map_a_err: mean=0.0529, std=0.0060, CV=11.42% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "map_u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "chi2_ppc_pvalue",
+            "cv": 0.017911494114093523,
+            "consistent": true,
+            "summary": {
+              "mean": 0.9897646400171777,
+              "std": 0.017728163524005573,
+              "min": 0.969293920051533,
+              "max": 1.0,
+              "n": 3,
+              "values": [
+                1.0,
+                1.0,
+                0.969293920051533
+              ]
+            },
+            "interpretation": "chi2_ppc_pvalue: mean=0.9898, std=0.0177, CV=1.79% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_rho_error_std",
+            "cv": 0.6475174283540867,
+            "consistent": false,
+            "summary": {
+              "mean": 0.20969057336742722,
+              "std": 0.1357783008169704,
+              "min": 0.12773226834632714,
+              "max": 0.36641891227380013,
+              "n": 3,
+              "values": [
+                0.13492053948215435,
+                0.12773226834632714,
+                0.36641891227380013
+              ]
+            },
+            "interpretation": "spearman_rho_error_std: mean=0.2097, std=0.1358, CV=64.75% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_pvalue_error_std",
+            "cv": 1.1208995051484953,
+            "consistent": false,
+            "summary": {
+              "mean": 1.8742071612351914e-05,
+              "std": 2.1007978795742923e-05,
+              "min": 6.8346923018998184e-34,
+              "max": 4.145050734656814e-05,
+              "n": 3,
+              "values": [
+                1.4775707490487592e-05,
+                4.145050734656814e-05,
+                6.8346923018998184e-34
+              ]
+            },
+            "interpretation": "spearman_pvalue_error_std: mean=0.0000, std=0.0000, CV=112.09% \u2192 INCONSISTENT (threshold 20%)"
+          }
+        ],
+        "ood_data_only": [
+          {
+            "metric": "a_err",
+            "cv": 0.13825628312668095,
+            "consistent": true,
+            "summary": {
+              "mean": 0.07911563875058213,
+              "std": 0.010938234150848693,
+              "min": 0.06659788240176735,
+              "max": 0.08683201420888857,
+              "n": 3,
+              "values": [
+                0.08391701964109047,
+                0.08683201420888857,
+                0.06659788240176735
+              ]
+            },
+            "interpretation": "a_err: mean=0.0791, std=0.0109, CV=13.83% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ess_min",
+            "cv": 1.707004400572056,
+            "consistent": false,
+            "summary": {
+              "mean": 939.3734286873308,
+              "std": 1603.514576549734,
+              "min": 6.410927369423883,
+              "max": 2790.9340003811662,
+              "n": 3,
+              "values": [
+                6.410927369423883,
+                20.7753583114024,
+                2790.9340003811662
+              ]
+            },
+            "interpretation": "ess_min: mean=939.3734, std=1603.5146, CV=170.70% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "rhat_max",
+            "cv": 0.24713662823466115,
+            "consistent": false,
+            "summary": {
+              "mean": 1.258816407582825,
+              "std": 0.3110996425364883,
+              "min": 1.0029634921593504,
+              "max": 1.605117433040699,
+              "n": 3,
+              "values": [
+                1.605117433040699,
+                1.168368297548425,
+                1.0029634921593504
+              ]
+            },
+            "interpretation": "rhat_max: mean=1.2588, std=0.3111, CV=24.71% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "coverage_95",
+            "cv": 0.4960563962664072,
+            "consistent": false,
+            "summary": {
+              "mean": 0.07584635416666667,
+              "std": 0.037624069117862265,
+              "min": 0.03515625,
+              "max": 0.109375,
+              "n": 3,
+              "values": [
+                0.109375,
+                0.0830078125,
+                0.03515625
+              ]
+            },
+            "interpretation": "coverage_95: mean=0.0758, std=0.0376, CV=49.61% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ci_width",
+            "cv": 0.42796775178232166,
+            "consistent": false,
+            "summary": {
+              "mean": 0.09954137139478714,
+              "std": 0.042600496925156155,
+              "min": 0.051513870086973744,
+              "max": 0.1327649904986895,
+              "n": 3,
+              "values": [
+                0.1327649904986895,
+                0.11434525359869818,
+                0.051513870086973744
+              ]
+            },
+            "interpretation": "ci_width: mean=0.0995, std=0.0426, CV=42.80% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "crps_a",
+            "cv": 0.11470177814118364,
+            "consistent": true,
+            "summary": {
+              "mean": 0.15117507062816787,
+              "std": 0.01734004941166988,
+              "min": 0.13154873720811405,
+              "max": 0.16442081522701416,
+              "n": 3,
+              "values": [
+                0.15755565944937544,
+                0.16442081522701416,
+                0.13154873720811405
+              ]
+            },
+            "interpretation": "crps_a: mean=0.1512, std=0.0173, CV=11.47% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "mean_std",
+            "cv": 0.4022991193595098,
+            "consistent": false,
+            "summary": {
+              "mean": 0.024278285998716412,
+              "std": 0.00976713307684193,
+              "min": 0.01310912190471168,
+              "max": 0.031217201321406974,
+              "n": 3,
+              "values": [
+                0.031217201321406974,
+                0.028508534770030576,
+                0.01310912190471168
+              ]
+            },
+            "interpretation": "mean_std: mean=0.0243, std=0.0098, CV=40.23% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "nll_a",
+            "cv": 0.8158837255981595,
+            "consistent": false,
+            "summary": {
+              "mean": 25.36437231332628,
+              "std": 20.694378580455453,
+              "min": 12.007427834884925,
+              "max": 49.20242876898675,
+              "n": 3,
+              "values": [
+                12.007427834884925,
+                14.88326033610716,
+                49.20242876898675
+              ]
+            },
+            "interpretation": "nll_a: mean=25.3644, std=20.6944, CV=81.59% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "n_div",
+            "cv": 0.541176404535939,
+            "consistent": false,
+            "summary": {
+              "mean": 88.0,
+              "std": 47.62352359916263,
+              "min": 34.0,
+              "max": 124.0,
+              "n": 3,
+              "values": [
+                124.0,
+                106.0,
+                34.0
+              ]
+            },
+            "interpretation": "n_div: mean=88.0000, std=47.6235, CV=54.12% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_a_err",
+            "cv": 0.11313799345322811,
+            "consistent": true,
+            "summary": {
+              "mean": 0.26614442467689514,
+              "std": 0.030111046176707727,
+              "min": 0.24790671467781067,
+              "max": 0.300899475812912,
+              "n": 3,
+              "values": [
+                0.300899475812912,
+                0.24962708353996277,
+                0.24790671467781067
+              ]
+            },
+            "interpretation": "map_a_err: mean=0.2661, std=0.0301, CV=11.31% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "map_u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "chi2_ppc_pvalue",
+            "cv": 6.5581334653979375e-06,
+            "consistent": true,
+            "summary": {
+              "mean": 0.9999962136742147,
+              "std": 6.558108634168093e-06,
+              "min": 0.9999886410226441,
+              "max": 1.0,
+              "n": 3,
+              "values": [
+                1.0,
+                1.0,
+                0.9999886410226441
+              ]
+            },
+            "interpretation": "chi2_ppc_pvalue: mean=1.0000, std=0.0000, CV=0.00% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_rho_error_std",
+            "cv": 0.011889515257378535,
+            "consistent": true,
+            "summary": {
+              "mean": 0.941716943232482,
+              "std": 0.011196557964694471,
+              "min": 0.9288198045561832,
+              "max": 0.9489470307917888,
+              "n": 3,
+              "values": [
+                0.9288198045561832,
+                0.9489470307917888,
+                0.9473839943494741
+              ]
+            },
+            "interpretation": "spearman_rho_error_std: mean=0.9417, std=0.0112, CV=1.19% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_pvalue_error_std",
+            "cv": Infinity,
+            "consistent": false,
+            "summary": {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0.0,
+              "max": 0.0,
+              "n": 3,
+              "values": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "interpretation": "spearman_pvalue_error_std: mean=0.0000, std=0.0000, CV=inf% \u2192 INCONSISTENT (threshold 20%)"
+          }
+        ],
+        "ood_physics": [
+          {
+            "metric": "a_err",
+            "cv": 0.1473384316686074,
+            "consistent": true,
+            "summary": {
+              "mean": 0.10065346642278084,
+              "std": 0.014830123884741366,
+              "min": 0.08352963417746016,
+              "max": 0.10933093064089595,
+              "n": 3,
+              "values": [
+                0.10933093064089595,
+                0.1090998344499864,
+                0.08352963417746016
+              ]
+            },
+            "interpretation": "a_err: mean=0.1007, std=0.0148, CV=14.73% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ess_min",
+            "cv": 1.5903268542892914,
+            "consistent": false,
+            "summary": {
+              "mean": 585.6421936150867,
+              "std": 931.362507510961,
+              "min": 20.51793768538391,
+              "max": 1660.6133396489085,
+              "n": 3,
+              "values": [
+                20.51793768538391,
+                75.79530351096774,
+                1660.6133396489085
+              ]
+            },
+            "interpretation": "ess_min: mean=585.6422, std=931.3625, CV=159.03% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "rhat_max",
+            "cv": 0.04336358386225779,
+            "consistent": true,
+            "summary": {
+              "mean": 1.0502010271547355,
+              "std": 0.045540480313253646,
+              "min": 1.002698229127795,
+              "max": 1.0934856922000453,
+              "n": 3,
+              "values": [
+                1.0934856922000453,
+                1.0544191601363664,
+                1.002698229127795
+              ]
+            },
+            "interpretation": "rhat_max: mean=1.0502, std=0.0455, CV=4.34% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "coverage_95",
+            "cv": 0.47377506257437757,
+            "consistent": false,
+            "summary": {
+              "mean": 0.0537109375,
+              "std": 0.02544690277499098,
+              "min": 0.0244140625,
+              "max": 0.0703125,
+              "n": 3,
+              "values": [
+                0.0703125,
+                0.06640625,
+                0.0244140625
+              ]
+            },
+            "interpretation": "coverage_95: mean=0.0537, std=0.0254, CV=47.38% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ci_width",
+            "cv": 0.2584728530876129,
+            "consistent": false,
+            "summary": {
+              "mean": 0.06804889435396086,
+              "std": 0.017588791873125818,
+              "min": 0.0477511700936424,
+              "max": 0.07880388513811729,
+              "n": 3,
+              "values": [
+                0.07880388513811729,
+                0.07759162783012288,
+                0.0477511700936424
+              ]
+            },
+            "interpretation": "ci_width: mean=0.0680, std=0.0176, CV=25.85% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "crps_a",
+            "cv": 0.1430136371660639,
+            "consistent": true,
+            "summary": {
+              "mean": 0.2000403259055622,
+              "std": 0.028608494587639248,
+              "min": 0.1670067076745773,
+              "max": 0.2167332386784274,
+              "n": 3,
+              "values": [
+                0.2167332386784274,
+                0.21638103136368192,
+                0.1670067076745773
+              ]
+            },
+            "interpretation": "crps_a: mean=0.2000, std=0.0286, CV=14.30% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "mean_std",
+            "cv": 0.25553029395682714,
+            "consistent": false,
+            "summary": {
+              "mean": 0.01733489221933229,
+              "std": 0.004429590104515896,
+              "min": 0.012222236604016026,
+              "max": 0.020020961745055438,
+              "n": 3,
+              "values": [
+                0.020020961745055438,
+                0.019761478308925398,
+                0.012222236604016026
+              ]
+            },
+            "interpretation": "mean_std: mean=0.0173, std=0.0044, CV=25.55% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "nll_a",
+            "cv": 0.2873072691035607,
+            "consistent": false,
+            "summary": {
+              "mean": 67.49378944142744,
+              "std": 19.391456325867257,
+              "min": 56.02906912232517,
+              "max": 89.8829415922832,
+              "n": 3,
+              "values": [
+                56.02906912232517,
+                56.569357609673965,
+                89.8829415922832
+              ]
+            },
+            "interpretation": "nll_a: mean=67.4938, std=19.3915, CV=28.73% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "n_div",
+            "cv": 0.57282196186948,
+            "consistent": false,
+            "summary": {
+              "mean": 16.0,
+              "std": 9.16515138991168,
+              "min": 8.0,
+              "max": 26.0,
+              "n": 3,
+              "values": [
+                26.0,
+                14.0,
+                8.0
+              ]
+            },
+            "interpretation": "n_div: mean=16.0000, std=9.1652, CV=57.28% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_a_err",
+            "cv": 0.11313799345322811,
+            "consistent": true,
+            "summary": {
+              "mean": 0.26614442467689514,
+              "std": 0.030111046176707727,
+              "min": 0.24790671467781067,
+              "max": 0.300899475812912,
+              "n": 3,
+              "values": [
+                0.300899475812912,
+                0.24962708353996277,
+                0.24790671467781067
+              ]
+            },
+            "interpretation": "map_a_err: mean=0.2661, std=0.0301, CV=11.31% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "map_u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "chi2_ppc_pvalue",
+            "cv": 0.027252633135180525,
+            "consistent": true,
+            "summary": {
+              "mean": 0.9845093641648731,
+              "std": 0.02683047251973513,
+              "min": 0.9535282031013799,
+              "max": 0.9999999706319418,
+              "n": 3,
+              "values": [
+                0.9999999706319418,
+                0.9999999187612981,
+                0.9535282031013799
+              ]
+            },
+            "interpretation": "chi2_ppc_pvalue: mean=0.9845, std=0.0268, CV=2.73% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_rho_error_std",
+            "cv": 0.047805497648169014,
+            "consistent": true,
+            "summary": {
+              "mean": 0.8871763539207972,
+              "std": 0.04241190710087183,
+              "min": 0.8595965283241541,
+              "max": 0.9360131607181174,
+              "n": 3,
+              "values": [
+                0.8595965283241541,
+                0.8659193727201201,
+                0.9360131607181174
+              ]
+            },
+            "interpretation": "spearman_rho_error_std: mean=0.8872, std=0.0424, CV=4.78% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_pvalue_error_std",
+            "cv": 0.0,
+            "consistent": true,
+            "summary": {
+              "mean": 9.302327904313215e-301,
+              "std": 0.0,
+              "min": 0.0,
+              "max": 2.7906983703611594e-300,
+              "n": 3,
+              "values": [
+                2.7906983703611594e-300,
+                9.32805103712117e-310,
+                0.0
+              ]
+            },
+            "interpretation": "spearman_pvalue_error_std: mean=0.0000, std=0.0000, CV=0.00% \u2192 CONSISTENT (threshold 20%)"
+          }
+        ]
+      },
+      "comparison_robustness": {
+        "condition_a": "ood_data_only",
+        "condition_b": "ood_physics",
+        "tests": [
+          {
+            "metric": "a_err",
+            "differences": [
+              -0.025413910999805486,
+              -0.02226782024109783,
+              -0.01693175177569281
+            ],
+            "mean_diff": -0.02153782767219871,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "a_err diff (ood_data_only - ood_physics): mean=-0.0215, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only < ood_physics)"
+          },
+          {
+            "metric": "u_err",
+            "differences": [],
+            "mean_diff": NaN,
+            "sign_consistent": false,
+            "wilcoxon_stat": NaN,
+            "wilcoxon_p": NaN,
+            "interpretation": "u_err: no non-None values to compare"
+          },
+          {
+            "metric": "ess_min",
+            "differences": [
+              -14.107010315960027,
+              -55.01994519956534,
+              1130.3206607322577
+            ],
+            "mean_diff": 353.7312350722441,
+            "sign_consistent": false,
+            "wilcoxon_stat": 3.0,
+            "wilcoxon_p": 1.0,
+            "interpretation": "ess_min diff (ood_data_only - ood_physics): mean=353.7312, sign_consistent=False, Wilcoxon p=1.000 \u2192 NOT ROBUST (ood_data_only > ood_physics)"
+          },
+          {
+            "metric": "rhat_max",
+            "differences": [
+              0.5116317408406537,
+              0.1139491374120587,
+              0.000265263031555385
+            ],
+            "mean_diff": 0.20861538042808925,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "rhat_max diff (ood_data_only - ood_physics): mean=0.2086, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only > ood_physics)"
+          },
+          {
+            "metric": "coverage_95",
+            "differences": [
+              0.0390625,
+              0.0166015625,
+              0.0107421875
+            ],
+            "mean_diff": 0.022135416666666668,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "coverage_95 diff (ood_data_only - ood_physics): mean=0.0221, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only > ood_physics)"
+          },
+          {
+            "metric": "ci_width",
+            "differences": [
+              0.05396110536057222,
+              0.0367536257685753,
+              0.003762699993331342
+            ],
+            "mean_diff": 0.031492477040826285,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "ci_width diff (ood_data_only - ood_physics): mean=0.0315, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only > ood_physics)"
+          },
+          {
+            "metric": "crps_a",
+            "differences": [
+              -0.05917757922905195,
+              -0.051960216136667764,
+              -0.035457970466463234
+            ],
+            "mean_diff": -0.04886525527739432,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "crps_a diff (ood_data_only - ood_physics): mean=-0.0489, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only < ood_physics)"
+          },
+          {
+            "metric": "mean_std",
+            "differences": [
+              0.011196239576351536,
+              0.008747056461105178,
+              0.0008868853006956546
+            ],
+            "mean_diff": 0.006943393779384123,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "mean_std diff (ood_data_only - ood_physics): mean=0.0069, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only > ood_physics)"
+          },
+          {
+            "metric": "nll_a",
+            "differences": [
+              -44.02164128744025,
+              -41.6860972735668,
+              -40.68051282329645
+            ],
+            "mean_diff": -42.12941712810117,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "nll_a diff (ood_data_only - ood_physics): mean=-42.1294, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only < ood_physics)"
+          },
+          {
+            "metric": "n_div",
+            "differences": [
+              98.0,
+              92.0,
+              26.0
+            ],
+            "mean_diff": 72.0,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "n_div diff (ood_data_only - ood_physics): mean=72.0000, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only > ood_physics)"
+          },
+          {
+            "metric": "map_a_err",
+            "differences": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mean_diff": 0.0,
+            "sign_consistent": false,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 1.0,
+            "interpretation": "map_a_err diff (ood_data_only - ood_physics): mean=0.0000, sign_consistent=False, Wilcoxon p=1.000 \u2192 NOT ROBUST (ood_data_only < ood_physics)"
+          },
+          {
+            "metric": "map_u_err",
+            "differences": [],
+            "mean_diff": NaN,
+            "sign_consistent": false,
+            "wilcoxon_stat": NaN,
+            "wilcoxon_p": NaN,
+            "interpretation": "map_u_err: no non-None values to compare"
+          },
+          {
+            "metric": "chi2_ppc_pvalue",
+            "differences": [
+              2.9368058207523973e-08,
+              8.12387018767069e-08,
+              0.0464604379212642
+            ],
+            "mean_diff": 0.015486849509341427,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "chi2_ppc_pvalue diff (ood_data_only - ood_physics): mean=0.0155, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only > ood_physics)"
+          },
+          {
+            "metric": "spearman_rho_error_std",
+            "differences": [
+              0.06922327623202906,
+              0.08302765807166868,
+              0.011370833631356714
+            ],
+            "mean_diff": 0.05454058931168482,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "spearman_rho_error_std diff (ood_data_only - ood_physics): mean=0.0545, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only > ood_physics)"
+          },
+          {
+            "metric": "spearman_pvalue_error_std",
+            "differences": [
+              -2.7906983703611594e-300,
+              -9.32805103712117e-310,
+              0.0
+            ],
+            "mean_diff": -9.302327904313215e-301,
+            "sign_consistent": false,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.5,
+            "interpretation": "spearman_pvalue_error_std diff (ood_data_only - ood_physics): mean=-0.0000, sign_consistent=False, Wilcoxon p=0.500 \u2192 NOT ROBUST (ood_data_only < ood_physics)"
+          }
+        ]
+      },
+      "prior_summaries": {
+        "a_err": {
+          "mean": 0.3178579906622569,
+          "std": 0.014757961720630302,
+          "min": 0.3029334247112274,
+          "max": 0.332443505525589,
+          "n": 3,
+          "values": [
+            0.332443505525589,
+            0.3181970417499542,
+            0.3029334247112274
+          ]
+        },
+        "crps_a": {
+          "mean": 0.7779493489104491,
+          "std": 0.04498164894314557,
+          "min": 0.7353393017843192,
+          "max": 0.8249766712544576,
+          "n": 3,
+          "values": [
+            0.8249766712544576,
+            0.7735320736925708,
+            0.7353393017843192
+          ]
+        },
+        "coverage_95": {
+          "mean": 0.9977213541666666,
+          "std": 0.003946730355788458,
+          "min": 0.9931640625,
+          "max": 1.0,
+          "n": 3,
+          "values": [
+            0.9931640625,
+            1.0,
+            1.0
+          ]
+        },
+        "ci_width": {
+          "mean": 3.785806886823987,
+          "std": 0.06489737641731051,
+          "min": 3.713656630037276,
+          "max": 3.8394155488046953,
+          "n": 3,
+          "values": [
+            3.8394155488046953,
+            3.80434848162999,
+            3.713656630037276
+          ]
+        },
+        "mean_std": {
+          "mean": 1.0846735900873974,
+          "std": 0.028111347103973672,
+          "min": 1.0525433964418416,
+          "max": 1.1047369150457884,
+          "n": 3,
+          "values": [
+            1.1047369150457884,
+            1.0967404587745617,
+            1.0525433964418416
+          ]
+        }
+      },
+      "prior_ood_summaries": {
+        "a_err": {
+          "mean": 0.28233034412066144,
+          "std": 0.0028116309313868195,
+          "min": 0.27936771512031555,
+          "max": 0.28496161103248596,
+          "n": 3,
+          "values": [
+            0.28266170620918274,
+            0.28496161103248596,
+            0.27936771512031555
+          ]
+        },
+        "crps_a": {
+          "mean": 0.5053846345578742,
+          "std": 0.008008551440643634,
+          "min": 0.49616299140093,
+          "max": 0.5105936779112121,
+          "n": 3,
+          "values": [
+            0.5093972343614804,
+            0.5105936779112121,
+            0.49616299140093
+          ]
+        },
+        "coverage_95": {
+          "mean": 1.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0,
+          "n": 3,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "ci_width": {
+          "mean": 3.785806886823987,
+          "std": 0.06489737641731051,
+          "min": 3.713656630037276,
+          "max": 3.8394155488046953,
+          "n": 3,
+          "values": [
+            3.8394155488046953,
+            3.80434848162999,
+            3.713656630037276
+          ]
+        },
+        "mean_std": {
+          "mean": 1.0846735900873974,
+          "std": 0.028111347103973672,
+          "min": 1.0525433964418416,
+          "max": 1.1047369150457884,
+          "n": 3,
+          "values": [
+            1.1047369150457884,
+            1.0967404587745617,
+            1.0525433964418416
+          ]
+        }
+      }
+    },
+    "(1, None)": {
+      "n_seeds": 3,
+      "seeds": [
+        7,
+        42,
+        123
+      ],
+      "consistency_tests": {
+        "in_domain_data_only": [
+          {
+            "metric": "a_err",
+            "cv": 0.19917222500795584,
+            "consistent": true,
+            "summary": {
+              "mean": 0.004561973812069363,
+              "std": 0.0009086184745778812,
+              "min": 0.004019021754062514,
+              "max": 0.005610939281112864,
+              "n": 3,
+              "values": [
+                0.004019021754062514,
+                0.005610939281112864,
+                0.004055960401032711
+              ]
+            },
+            "interpretation": "a_err: mean=0.0046, std=0.0009, CV=19.92% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ess_min",
+            "cv": 0.11750470623122374,
+            "consistent": true,
+            "summary": {
+              "mean": 3475.8945738000366,
+              "std": 408.4339707850779,
+              "min": 3028.35143945074,
+              "max": 3828.496128414999,
+              "n": 3,
+              "values": [
+                3828.496128414999,
+                3028.35143945074,
+                3570.836153534371
+              ]
+            },
+            "interpretation": "ess_min: mean=3475.8946, std=408.4340, CV=11.75% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "rhat_max",
+            "cv": 0.000346694324046231,
+            "consistent": true,
+            "summary": {
+              "mean": 1.0008633396076012,
+              "std": 0.0003469936389879107,
+              "min": 1.000463604923729,
+              "max": 1.0010869497880444,
+              "n": 3,
+              "values": [
+                1.000463604923729,
+                1.0010394641110296,
+                1.0010869497880444
+              ]
+            },
+            "interpretation": "rhat_max: mean=1.0009, std=0.0003, CV=0.03% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "coverage_95",
+            "cv": 0.002041516181235174,
+            "consistent": true,
+            "summary": {
+              "mean": 0.9957682291666666,
+              "std": 0.002032876952603645,
+              "min": 0.994140625,
+              "max": 0.998046875,
+              "n": 3,
+              "values": [
+                0.994140625,
+                0.998046875,
+                0.9951171875
+              ]
+            },
+            "interpretation": "coverage_95: mean=0.9958, std=0.0020, CV=0.20% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ci_width",
+            "cv": 0.17024429311370656,
+            "consistent": true,
+            "summary": {
+              "mean": 0.11412659985596697,
+              "std": 0.019429402317949943,
+              "min": 0.10270216532945656,
+              "max": 0.1365604616628927,
+              "n": 3,
+              "values": [
+                0.10270216532945656,
+                0.1365604616628927,
+                0.10311717257555167
+              ]
+            },
+            "interpretation": "ci_width: mean=0.1141, std=0.0194, CV=17.02% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "crps_a",
+            "cv": 0.1726492105158521,
+            "consistent": true,
+            "summary": {
+              "mean": 0.010789098267928553,
+              "std": 0.001862729298135812,
+              "min": 0.009675349959430105,
+              "max": 0.0129395325770264,
+              "n": 3,
+              "values": [
+                0.009675349959430105,
+                0.0129395325770264,
+                0.009752412267329154
+              ]
+            },
+            "interpretation": "crps_a: mean=0.0108, std=0.0019, CV=17.26% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "mean_std",
+            "cv": 0.16852571795871107,
+            "consistent": true,
+            "summary": {
+              "mean": 0.029021803133106264,
+              "std": 0.004890920209463104,
+              "min": 0.02613929894863455,
+              "max": 0.03466894130501807,
+              "n": 3,
+              "values": [
+                0.02613929894863455,
+                0.03466894130501807,
+                0.026257169145666174
+              ]
+            },
+            "interpretation": "mean_std: mean=0.0290, std=0.0049, CV=16.85% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "nll_a",
+            "cv": 0.05840634317356118,
+            "consistent": true,
+            "summary": {
+              "mean": -2.502948696284449,
+              "std": 0.1461880805010071,
+              "min": -2.590251017287538,
+              "max": -2.334178858355535,
+              "n": 3,
+              "values": [
+                -2.590251017287538,
+                -2.334178858355535,
+                -2.5844162132102744
+              ]
+            },
+            "interpretation": "nll_a: mean=-2.5029, std=0.1462, CV=5.84% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "n_div",
+            "cv": 1.2124355652982142,
+            "consistent": false,
+            "summary": {
+              "mean": 3.3333333333333335,
+              "std": 4.041451884327381,
+              "min": 1.0,
+              "max": 8.0,
+              "n": 3,
+              "values": [
+                1.0,
+                8.0,
+                1.0
+              ]
+            },
+            "interpretation": "n_div: mean=3.3333, std=4.0415, CV=121.24% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_a_err",
+            "cv": 0.22584420252163898,
+            "consistent": false,
+            "summary": {
+              "mean": 0.07609450941284497,
+              "std": 0.017185503794619323,
+              "min": 0.05626631900668144,
+              "max": 0.08669685572385788,
+              "n": 3,
+              "values": [
+                0.05626631900668144,
+                0.0853203535079956,
+                0.08669685572385788
+              ]
+            },
+            "interpretation": "map_a_err: mean=0.0761, std=0.0172, CV=22.58% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "map_u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "chi2_ppc_pvalue",
+            "cv": 0.0,
+            "consistent": true,
+            "summary": {
+              "mean": 1.0,
+              "std": 0.0,
+              "min": 1.0,
+              "max": 1.0,
+              "n": 3,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "interpretation": "chi2_ppc_pvalue: mean=1.0000, std=0.0000, CV=0.00% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_rho_error_std",
+            "cv": 0.19826084079732614,
+            "consistent": true,
+            "summary": {
+              "mean": 0.2919695181555921,
+              "std": 0.057886122156717866,
+              "min": 0.25399813809813315,
+              "max": 0.35859378352764465,
+              "n": 3,
+              "values": [
+                0.2633166328409985,
+                0.35859378352764465,
+                0.25399813809813315
+              ]
+            },
+            "interpretation": "spearman_rho_error_std: mean=0.2920, std=0.0579, CV=19.83% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_pvalue_error_std",
+            "cv": 1.5675602487466673,
+            "consistent": false,
+            "summary": {
+              "mean": 5.4695914115968625e-17,
+              "std": 8.573914073705413e-17,
+              "min": 1.965721898656368e-32,
+              "max": 1.5351042271096438e-16,
+              "n": 3,
+              "values": [
+                1.057731963694148e-17,
+                1.965721898656368e-32,
+                1.5351042271096438e-16
+              ]
+            },
+            "interpretation": "spearman_pvalue_error_std: mean=0.0000, std=0.0000, CV=156.76% \u2192 INCONSISTENT (threshold 20%)"
+          }
+        ],
+        "in_domain_physics": [
+          {
+            "metric": "a_err",
+            "cv": 1.487413080441874,
+            "consistent": false,
+            "summary": {
+              "mean": 0.03815460724343755,
+              "std": 0.05675166189301128,
+              "min": 0.0053782075772955485,
+              "max": 0.10368578059574793,
+              "n": 3,
+              "values": [
+                0.0053782075772955485,
+                0.10368578059574793,
+                0.005399833557269163
+              ]
+            },
+            "interpretation": "a_err: mean=0.0382, std=0.0568, CV=148.74% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ess_min",
+            "cv": 0.866701712668528,
+            "consistent": false,
+            "summary": {
+              "mean": 5294.509103479697,
+              "std": 4588.7601077249665,
+              "min": 2.0024574026611903,
+              "max": 8161.55503774164,
+              "n": 3,
+              "values": [
+                8161.55503774164,
+                2.0024574026611903,
+                7719.9698152947885
+              ]
+            },
+            "interpretation": "ess_min: mean=5294.5091, std=4588.7601, CV=86.67% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "rhat_max",
+            "cv": 1.5693045760221018,
+            "consistent": false,
+            "summary": {
+              "mean": 10.644933636901913,
+              "std": 16.705143067841767,
+              "min": 1.0001385587897897,
+              "max": 29.93437133084038,
+              "n": 3,
+              "values": [
+                1.0002910210755656,
+                29.93437133084038,
+                1.0001385587897897
+              ]
+            },
+            "interpretation": "rhat_max: mean=10.6449, std=16.7051, CV=156.93% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "coverage_95",
+            "cv": 0.024012642762049813,
+            "consistent": true,
+            "summary": {
+              "mean": 0.9635416666666666,
+              "std": 0.023137181828016745,
+              "min": 0.94921875,
+              "max": 0.990234375,
+              "n": 3,
+              "values": [
+                0.94921875,
+                0.990234375,
+                0.951171875
+              ]
+            },
+            "interpretation": "coverage_95: mean=0.9635, std=0.0231, CV=2.40% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ci_width",
+            "cv": 1.3199623724026552,
+            "consistent": false,
+            "summary": {
+              "mean": 0.3526878603358128,
+              "std": 0.4655347048464758,
+              "min": 0.08367946884690793,
+              "max": 0.8902409679978008,
+              "n": 3,
+              "values": [
+                0.08367946884690793,
+                0.8902409679978008,
+                0.08414314416272957
+              ]
+            },
+            "interpretation": "ci_width: mean=0.3527, std=0.4655, CV=132.00% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "crps_a",
+            "cv": 1.391996782467052,
+            "consistent": false,
+            "summary": {
+              "mean": 0.059074841077841854,
+              "std": 0.0822319887051083,
+              "min": 0.011587390286803542,
+              "max": 0.15402816189015575,
+              "n": 3,
+              "values": [
+                0.01160897105656628,
+                0.15402816189015575,
+                0.011587390286803542
+              ]
+            },
+            "interpretation": "crps_a: mean=0.0591, std=0.0822, CV=139.20% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "mean_std",
+            "cv": 1.4632923215748483,
+            "consistent": false,
+            "summary": {
+              "mean": 0.13751234425114475,
+              "std": 0.20122075746445736,
+              "min": 0.021271821227122956,
+              "max": 0.3698620488544322,
+              "n": 3,
+              "values": [
+                0.021271821227122956,
+                0.3698620488544322,
+                0.02140316267187914
+              ]
+            },
+            "interpretation": "mean_std: mean=0.1375, std=0.2012, CV=146.33% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "nll_a",
+            "cv": 0.9321979822805782,
+            "consistent": false,
+            "summary": {
+              "mean": -1.6307802829559073,
+              "std": 1.520210089314447,
+              "min": -2.5091431139373466,
+              "max": 0.12460695554128395,
+              "n": 3,
+              "values": [
+                -2.5091431139373466,
+                0.12460695554128395,
+                -2.5078046904716587
+              ]
+            },
+            "interpretation": "nll_a: mean=-1.6308, std=1.5202, CV=93.22% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "n_div",
+            "cv": Infinity,
+            "consistent": false,
+            "summary": {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0.0,
+              "max": 0.0,
+              "n": 3,
+              "values": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "interpretation": "n_div: mean=0.0000, std=0.0000, CV=inf% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_a_err",
+            "cv": 0.22584420252163898,
+            "consistent": false,
+            "summary": {
+              "mean": 0.07609450941284497,
+              "std": 0.017185503794619323,
+              "min": 0.05626631900668144,
+              "max": 0.08669685572385788,
+              "n": 3,
+              "values": [
+                0.05626631900668144,
+                0.0853203535079956,
+                0.08669685572385788
+              ]
+            },
+            "interpretation": "map_a_err: mean=0.0761, std=0.0172, CV=22.58% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "map_u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "chi2_ppc_pvalue",
+            "cv": 0.8660254037844388,
+            "consistent": false,
+            "summary": {
+              "mean": 0.6666666666666666,
+              "std": 0.5773502691896258,
+              "min": 1.1755451670519352e-79,
+              "max": 1.0,
+              "n": 3,
+              "values": [
+                1.0,
+                1.1755451670519352e-79,
+                1.0
+              ]
+            },
+            "interpretation": "chi2_ppc_pvalue: mean=0.6667, std=0.5774, CV=86.60% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_rho_error_std",
+            "cv": 0.5616539169703915,
+            "consistent": false,
+            "summary": {
+              "mean": 0.5834883837887131,
+              "std": 0.3277185362616538,
+              "min": 0.39041088128531576,
+              "max": 0.96187859863386,
+              "n": 3,
+              "values": [
+                0.39041088128531576,
+                0.96187859863386,
+                0.39817567144696375
+              ]
+            },
+            "interpretation": "spearman_rho_error_std: mean=0.5835, std=0.3277, CV=56.17% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_pvalue_error_std",
+            "cv": 1.6712215798948615,
+            "consistent": false,
+            "summary": {
+              "mean": 4.33168665928721e-39,
+              "std": 7.239208222343466e-39,
+              "min": 0.0,
+              "max": 1.2688935620995326e-38,
+              "n": 3,
+              "values": [
+                1.2688935620995326e-38,
+                0.0,
+                3.061243568663036e-40
+              ]
+            },
+            "interpretation": "spearman_pvalue_error_std: mean=0.0000, std=0.0000, CV=167.12% \u2192 INCONSISTENT (threshold 20%)"
+          }
+        ],
+        "ood_data_only": [
+          {
+            "metric": "a_err",
+            "cv": 0.3693794491875973,
+            "consistent": false,
+            "summary": {
+              "mean": 0.06638379780619684,
+              "std": 0.02452081066863382,
+              "min": 0.047294779087528216,
+              "max": 0.09403844739457756,
+              "n": 3,
+              "values": [
+                0.047294779087528216,
+                0.09403844739457756,
+                0.05781816693648473
+              ]
+            },
+            "interpretation": "a_err: mean=0.0664, std=0.0245, CV=36.94% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ess_min",
+            "cv": 0.5820399319835419,
+            "consistent": false,
+            "summary": {
+              "mean": 3.3094495237118338,
+              "std": 1.926231775684201,
+              "min": 2.146076416937572,
+              "max": 5.532870256094246,
+              "n": 3,
+              "values": [
+                2.146076416937572,
+                5.532870256094246,
+                2.249401898103683
+              ]
+            },
+            "interpretation": "ess_min: mean=3.3094, std=1.9262, CV=58.20% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "rhat_max",
+            "cv": 0.40288077949059065,
+            "consistent": false,
+            "summary": {
+              "mean": 2.7290742448333734,
+              "std": 1.0994915590461645,
+              "min": 1.5243533268071907,
+              "max": 3.678374641971754,
+              "n": 3,
+              "values": [
+                3.678374641971754,
+                1.5243533268071907,
+                2.9844947657211747
+              ]
+            },
+            "interpretation": "rhat_max: mean=2.7291, std=1.0995, CV=40.29% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "coverage_95",
+            "cv": 0.4062674463458769,
+            "consistent": false,
+            "summary": {
+              "mean": 0.4847005208333333,
+              "std": 0.19691804284147485,
+              "min": 0.259765625,
+              "max": 0.6259765625,
+              "n": 3,
+              "values": [
+                0.6259765625,
+                0.259765625,
+                0.568359375
+              ]
+            },
+            "interpretation": "coverage_95: mean=0.4847, std=0.1969, CV=40.63% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ci_width",
+            "cv": 0.03445880521272015,
+            "consistent": true,
+            "summary": {
+              "mean": 0.23101175250800832,
+              "std": 0.007960388981522574,
+              "min": 0.22187181538030498,
+              "max": 0.23642667948111376,
+              "n": 3,
+              "values": [
+                0.23642667948111376,
+                0.23473676266260618,
+                0.22187181538030498
+              ]
+            },
+            "interpretation": "ci_width: mean=0.2310, std=0.0080, CV=3.45% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "crps_a",
+            "cv": 0.5179729837982874,
+            "consistent": false,
+            "summary": {
+              "mean": 0.10852675168779409,
+              "std": 0.05621392539366253,
+              "min": 0.06394778192790009,
+              "max": 0.17167626593048263,
+              "n": 3,
+              "values": [
+                0.06394778192790009,
+                0.17167626593048263,
+                0.08995620720499961
+              ]
+            },
+            "interpretation": "crps_a: mean=0.1085, std=0.0562, CV=51.80% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "mean_std",
+            "cv": 0.19614145312058312,
+            "consistent": true,
+            "summary": {
+              "mean": 0.0633724438781326,
+              "std": 0.01242996323005953,
+              "min": 0.05139164546885422,
+              "max": 0.07620750070808852,
+              "n": 3,
+              "values": [
+                0.07620750070808852,
+                0.05139164546885422,
+                0.06251818545745505
+              ]
+            },
+            "interpretation": "mean_std: mean=0.0634, std=0.0124, CV=19.61% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "nll_a",
+            "cv": 1.9281125950696434,
+            "consistent": false,
+            "summary": {
+              "mean": 1.36029184616939,
+              "std": 2.6227958415697388,
+              "min": -0.5483811241980299,
+              "max": 4.350993633968797,
+              "n": 3,
+              "values": [
+                -0.5483811241980299,
+                4.350993633968797,
+                0.2782630287374023
+              ]
+            },
+            "interpretation": "nll_a: mean=1.3603, std=2.6228, CV=192.81% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "n_div",
+            "cv": 1.1503180639432533,
+            "consistent": false,
+            "summary": {
+              "mean": 57.666666666666664,
+              "std": 66.33500835406093,
+              "min": 14.0,
+              "max": 134.0,
+              "n": 3,
+              "values": [
+                14.0,
+                134.0,
+                25.0
+              ]
+            },
+            "interpretation": "n_div: mean=57.6667, std=66.3350, CV=115.03% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_a_err",
+            "cv": 0.03867773817185501,
+            "consistent": true,
+            "summary": {
+              "mean": 0.2984195649623871,
+              "std": 0.011542193798974086,
+              "min": 0.28739580512046814,
+              "max": 0.31041833758354187,
+              "n": 3,
+              "values": [
+                0.31041833758354187,
+                0.29744455218315125,
+                0.28739580512046814
+              ]
+            },
+            "interpretation": "map_a_err: mean=0.2984, std=0.0115, CV=3.87% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "map_u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "chi2_ppc_pvalue",
+            "cv": 0.0,
+            "consistent": true,
+            "summary": {
+              "mean": 1.0,
+              "std": 0.0,
+              "min": 1.0,
+              "max": 1.0,
+              "n": 3,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "interpretation": "chi2_ppc_pvalue: mean=1.0000, std=0.0000, CV=0.00% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_rho_error_std",
+            "cv": 0.039570851458736137,
+            "consistent": true,
+            "summary": {
+              "mean": 0.8785319771773596,
+              "std": 0.034764258370635064,
+              "min": 0.8402042839389171,
+              "max": 0.9080299714791502,
+              "n": 3,
+              "values": [
+                0.8402042839389171,
+                0.9080299714791502,
+                0.8873616761140118
+              ]
+            },
+            "interpretation": "spearman_rho_error_std: mean=0.8785, std=0.0348, CV=3.96% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_pvalue_error_std",
+            "cv": 0.0,
+            "consistent": true,
+            "summary": {
+              "mean": 2.310752373708403e-274,
+              "std": 0.0,
+              "min": 0.0,
+              "max": 6.932257121125208e-274,
+              "n": 3,
+              "values": [
+                6.932257121125208e-274,
+                0.0,
+                0.0
+              ]
+            },
+            "interpretation": "spearman_pvalue_error_std: mean=0.0000, std=0.0000, CV=0.00% \u2192 CONSISTENT (threshold 20%)"
+          }
+        ],
+        "ood_physics": [
+          {
+            "metric": "a_err",
+            "cv": 0.2157359132069071,
+            "consistent": false,
+            "summary": {
+              "mean": 0.09484474017623555,
+              "std": 0.020461416634792007,
+              "min": 0.07506538091611781,
+              "max": 0.1159260363627593,
+              "n": 3,
+              "values": [
+                0.07506538091611781,
+                0.1159260363627593,
+                0.09354280324982953
+              ]
+            },
+            "interpretation": "a_err: mean=0.0948, std=0.0205, CV=21.57% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ess_min",
+            "cv": 1.7258565027956017,
+            "consistent": false,
+            "summary": {
+              "mean": 649.8421498224803,
+              "std": 1121.5343000618013,
+              "min": 2.0143540631476307,
+              "max": 1944.8783605424592,
+              "n": 3,
+              "values": [
+                2.0143540631476307,
+                1944.8783605424592,
+                2.6337348618340166
+              ]
+            },
+            "interpretation": "ess_min: mean=649.8421, std=1121.5343, CV=172.59% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "rhat_max",
+            "cv": 1.2002675034135362,
+            "consistent": false,
+            "summary": {
+              "mean": 4.786799586093106,
+              "std": 5.74543998854092,
+              "min": 1.002558511949032,
+              "max": 11.39800057188561,
+              "n": 3,
+              "values": [
+                11.39800057188561,
+                1.002558511949032,
+                1.9598396744446758
+              ]
+            },
+            "interpretation": "rhat_max: mean=4.7868, std=5.7454, CV=120.03% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "coverage_95",
+            "cv": 0.6331807387412492,
+            "consistent": false,
+            "summary": {
+              "mean": 0.18391927083333334,
+              "std": 0.1164541397750019,
+              "min": 0.1142578125,
+              "max": 0.318359375,
+              "n": 3,
+              "values": [
+                0.318359375,
+                0.119140625,
+                0.1142578125
+              ]
+            },
+            "interpretation": "coverage_95: mean=0.1839, std=0.1165, CV=63.32% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ci_width",
+            "cv": 0.43122099213508974,
+            "consistent": false,
+            "summary": {
+              "mean": 0.15039371641579757,
+              "std": 0.06485292760370356,
+              "min": 0.10860244518834253,
+              "max": 0.22510402898355114,
+              "n": 3,
+              "values": [
+                0.22510402898355114,
+                0.11747467507549904,
+                0.10860244518834253
+              ]
+            },
+            "interpretation": "ci_width: mean=0.1504, std=0.0649, CV=43.12% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "crps_a",
+            "cv": 0.3031693839799921,
+            "consistent": false,
+            "summary": {
+              "mean": 0.17550363029940966,
+              "std": 0.0532073274841243,
+              "min": 0.11981398820103475,
+              "max": 0.22582104621921745,
+              "n": 3,
+              "values": [
+                0.11981398820103475,
+                0.22582104621921745,
+                0.1808758564779768
+              ]
+            },
+            "interpretation": "crps_a: mean=0.1755, std=0.0532, CV=30.32% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "mean_std",
+            "cv": 0.6475329653666084,
+            "consistent": false,
+            "summary": {
+              "mean": 0.04662513595435938,
+              "std": 0.030191312545147602,
+              "min": 0.028118194422207303,
+              "max": 0.08146444634986551,
+              "n": 3,
+              "values": [
+                0.08146444634986551,
+                0.03029276709100532,
+                0.028118194422207303
+              ]
+            },
+            "interpretation": "mean_std: mean=0.0466, std=0.0302, CV=64.75% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "nll_a",
+            "cv": 0.8582160107347931,
+            "consistent": false,
+            "summary": {
+              "mean": 17.005938499275857,
+              "std": 14.59476869764976,
+              "min": 0.4463919075779146,
+              "max": 27.995570803622513,
+              "n": 3,
+              "values": [
+                0.4463919075779146,
+                27.995570803622513,
+                22.575852786627145
+              ]
+            },
+            "interpretation": "nll_a: mean=17.0059, std=14.5948, CV=85.82% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "n_div",
+            "cv": 0.596212000885591,
+            "consistent": false,
+            "summary": {
+              "mean": 16.0,
+              "std": 9.539392014169456,
+              "min": 10.0,
+              "max": 27.0,
+              "n": 3,
+              "values": [
+                10.0,
+                27.0,
+                11.0
+              ]
+            },
+            "interpretation": "n_div: mean=16.0000, std=9.5394, CV=59.62% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_a_err",
+            "cv": 0.03867773817185501,
+            "consistent": true,
+            "summary": {
+              "mean": 0.2984195649623871,
+              "std": 0.011542193798974086,
+              "min": 0.28739580512046814,
+              "max": 0.31041833758354187,
+              "n": 3,
+              "values": [
+                0.31041833758354187,
+                0.29744455218315125,
+                0.28739580512046814
+              ]
+            },
+            "interpretation": "map_a_err: mean=0.2984, std=0.0115, CV=3.87% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "map_u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "chi2_ppc_pvalue",
+            "cv": 1.2571299515967301e-05,
+            "consistent": true,
+            "summary": {
+              "mean": 0.9999927418816833,
+              "std": 1.257120827198802e-05,
+              "min": 0.9999782259007242,
+              "max": 0.999999999999981,
+              "n": 3,
+              "values": [
+                0.999999999999981,
+                0.9999999997443443,
+                0.9999782259007242
+              ]
+            },
+            "interpretation": "chi2_ppc_pvalue: mean=1.0000, std=0.0000, CV=0.00% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_rho_error_std",
+            "cv": 0.01918550267561909,
+            "consistent": true,
+            "summary": {
+              "mean": 0.8380967287449632,
+              "std": 0.016079307031764096,
+              "min": 0.8214390735641226,
+              "max": 0.8535273876153351,
+              "n": 3,
+              "values": [
+                0.8535273876153351,
+                0.8393237250554322,
+                0.8214390735641226
+              ]
+            },
+            "interpretation": "spearman_rho_error_std: mean=0.8381, std=0.0161, CV=1.92% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_pvalue_error_std",
+            "cv": 0.0,
+            "consistent": true,
+            "summary": {
+              "mean": 5.4948917094375195e-252,
+              "std": 0.0,
+              "min": 1.302447583855416e-291,
+              "max": 1.6484675128312558e-251,
+              "n": 3,
+              "values": [
+                1.302447583855416e-291,
+                9.008947320480283e-273,
+                1.6484675128312558e-251
+              ]
+            },
+            "interpretation": "spearman_pvalue_error_std: mean=0.0000, std=0.0000, CV=0.00% \u2192 CONSISTENT (threshold 20%)"
+          }
+        ]
+      },
+      "comparison_robustness": {
+        "condition_a": "ood_data_only",
+        "condition_b": "ood_physics",
+        "tests": [
+          {
+            "metric": "a_err",
+            "differences": [
+              -0.02777060182858959,
+              -0.021887588968181743,
+              -0.0357246363133448
+            ],
+            "mean_diff": -0.02846094237003871,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "a_err diff (ood_data_only - ood_physics): mean=-0.0285, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only < ood_physics)"
+          },
+          {
+            "metric": "u_err",
+            "differences": [],
+            "mean_diff": NaN,
+            "sign_consistent": false,
+            "wilcoxon_stat": NaN,
+            "wilcoxon_p": NaN,
+            "interpretation": "u_err: no non-None values to compare"
+          },
+          {
+            "metric": "ess_min",
+            "differences": [
+              0.13172235378994124,
+              -1939.345490286365,
+              -0.38433296373033343
+            ],
+            "mean_diff": -646.5327002987684,
+            "sign_consistent": false,
+            "wilcoxon_stat": 1.0,
+            "wilcoxon_p": 0.5,
+            "interpretation": "ess_min diff (ood_data_only - ood_physics): mean=-646.5327, sign_consistent=False, Wilcoxon p=0.500 \u2192 NOT ROBUST (ood_data_only < ood_physics)"
+          },
+          {
+            "metric": "rhat_max",
+            "differences": [
+              -7.719625929913857,
+              0.5217948148581588,
+              1.024655091276499
+            ],
+            "mean_diff": -2.057725341259733,
+            "sign_consistent": false,
+            "wilcoxon_stat": 3.0,
+            "wilcoxon_p": 1.0,
+            "interpretation": "rhat_max diff (ood_data_only - ood_physics): mean=-2.0577, sign_consistent=False, Wilcoxon p=1.000 \u2192 NOT ROBUST (ood_data_only < ood_physics)"
+          },
+          {
+            "metric": "coverage_95",
+            "differences": [
+              0.3076171875,
+              0.140625,
+              0.4541015625
+            ],
+            "mean_diff": 0.30078125,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "coverage_95 diff (ood_data_only - ood_physics): mean=0.3008, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only > ood_physics)"
+          },
+          {
+            "metric": "ci_width",
+            "differences": [
+              0.01132265049756262,
+              0.11726208758710714,
+              0.11326937019196245
+            ],
+            "mean_diff": 0.08061803609221073,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "ci_width diff (ood_data_only - ood_physics): mean=0.0806, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only > ood_physics)"
+          },
+          {
+            "metric": "crps_a",
+            "differences": [
+              -0.05586620627313467,
+              -0.05414478028873482,
+              -0.09091964927297719
+            ],
+            "mean_diff": -0.06697687861161555,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "crps_a diff (ood_data_only - ood_physics): mean=-0.0670, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only < ood_physics)"
+          },
+          {
+            "metric": "mean_std",
+            "differences": [
+              -0.005256945641776992,
+              0.0210988783778489,
+              0.03439999103524775
+            ],
+            "mean_diff": 0.016747307923773217,
+            "sign_consistent": false,
+            "wilcoxon_stat": 1.0,
+            "wilcoxon_p": 0.5,
+            "interpretation": "mean_std diff (ood_data_only - ood_physics): mean=0.0167, sign_consistent=False, Wilcoxon p=0.500 \u2192 NOT ROBUST (ood_data_only > ood_physics)"
+          },
+          {
+            "metric": "nll_a",
+            "differences": [
+              -0.9947730317759444,
+              -23.644577169653715,
+              -22.297589757889742
+            ],
+            "mean_diff": -15.645646653106468,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "nll_a diff (ood_data_only - ood_physics): mean=-15.6456, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only < ood_physics)"
+          },
+          {
+            "metric": "n_div",
+            "differences": [
+              4.0,
+              107.0,
+              14.0
+            ],
+            "mean_diff": 41.666666666666664,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "n_div diff (ood_data_only - ood_physics): mean=41.6667, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only > ood_physics)"
+          },
+          {
+            "metric": "map_a_err",
+            "differences": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mean_diff": 0.0,
+            "sign_consistent": false,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 1.0,
+            "interpretation": "map_a_err diff (ood_data_only - ood_physics): mean=0.0000, sign_consistent=False, Wilcoxon p=1.000 \u2192 NOT ROBUST (ood_data_only < ood_physics)"
+          },
+          {
+            "metric": "map_u_err",
+            "differences": [],
+            "mean_diff": NaN,
+            "sign_consistent": false,
+            "wilcoxon_stat": NaN,
+            "wilcoxon_p": NaN,
+            "interpretation": "map_u_err: no non-None values to compare"
+          },
+          {
+            "metric": "chi2_ppc_pvalue",
+            "differences": [
+              1.8984813721090177e-14,
+              2.556557188171382e-10,
+              2.177409927583973e-05
+            ],
+            "mean_diff": 7.258118316847788e-06,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "chi2_ppc_pvalue diff (ood_data_only - ood_physics): mean=0.0000, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only > ood_physics)"
+          },
+          {
+            "metric": "spearman_rho_error_std",
+            "differences": [
+              -0.01332310367641798,
+              0.06870624642371803,
+              0.06592260254988924
+            ],
+            "mean_diff": 0.04043524843239643,
+            "sign_consistent": false,
+            "wilcoxon_stat": 1.0,
+            "wilcoxon_p": 0.5,
+            "interpretation": "spearman_rho_error_std diff (ood_data_only - ood_physics): mean=0.0404, sign_consistent=False, Wilcoxon p=0.500 \u2192 NOT ROBUST (ood_data_only > ood_physics)"
+          },
+          {
+            "metric": "spearman_pvalue_error_std",
+            "differences": [
+              6.932257121125208e-274,
+              -9.008947320480283e-273,
+              -1.6484675128312558e-251
+            ],
+            "mean_diff": -5.4948917094375195e-252,
+            "sign_consistent": false,
+            "wilcoxon_stat": 1.0,
+            "wilcoxon_p": 0.5,
+            "interpretation": "spearman_pvalue_error_std diff (ood_data_only - ood_physics): mean=-0.0000, sign_consistent=False, Wilcoxon p=0.500 \u2192 NOT ROBUST (ood_data_only < ood_physics)"
+          }
+        ]
+      },
+      "prior_summaries": {
+        "a_err": {
+          "mean": 0.3178579906622569,
+          "std": 0.014757961720630302,
+          "min": 0.3029334247112274,
+          "max": 0.332443505525589,
+          "n": 3,
+          "values": [
+            0.332443505525589,
+            0.3181970417499542,
+            0.3029334247112274
+          ]
+        },
+        "crps_a": {
+          "mean": 0.7779493489104491,
+          "std": 0.04498164894314557,
+          "min": 0.7353393017843192,
+          "max": 0.8249766712544576,
+          "n": 3,
+          "values": [
+            0.8249766712544576,
+            0.7735320736925708,
+            0.7353393017843192
+          ]
+        },
+        "coverage_95": {
+          "mean": 0.9977213541666666,
+          "std": 0.003946730355788458,
+          "min": 0.9931640625,
+          "max": 1.0,
+          "n": 3,
+          "values": [
+            0.9931640625,
+            1.0,
+            1.0
+          ]
+        },
+        "ci_width": {
+          "mean": 3.785806886823987,
+          "std": 0.06489737641731051,
+          "min": 3.713656630037276,
+          "max": 3.8394155488046953,
+          "n": 3,
+          "values": [
+            3.8394155488046953,
+            3.80434848162999,
+            3.713656630037276
+          ]
+        },
+        "mean_std": {
+          "mean": 1.0846735900873974,
+          "std": 0.028111347103973672,
+          "min": 1.0525433964418416,
+          "max": 1.1047369150457884,
+          "n": 3,
+          "values": [
+            1.1047369150457884,
+            1.0967404587745617,
+            1.0525433964418416
+          ]
+        }
+      },
+      "prior_ood_summaries": {
+        "a_err": {
+          "mean": 0.28233034412066144,
+          "std": 0.0028116309313868195,
+          "min": 0.27936771512031555,
+          "max": 0.28496161103248596,
+          "n": 3,
+          "values": [
+            0.28266170620918274,
+            0.28496161103248596,
+            0.27936771512031555
+          ]
+        },
+        "crps_a": {
+          "mean": 0.5053846345578742,
+          "std": 0.008008551440643634,
+          "min": 0.49616299140093,
+          "max": 0.5105936779112121,
+          "n": 3,
+          "values": [
+            0.5093972343614804,
+            0.5105936779112121,
+            0.49616299140093
+          ]
+        },
+        "coverage_95": {
+          "mean": 1.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0,
+          "n": 3,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "ci_width": {
+          "mean": 3.785806886823987,
+          "std": 0.06489737641731051,
+          "min": 3.713656630037276,
+          "max": 3.8394155488046953,
+          "n": 3,
+          "values": [
+            3.8394155488046953,
+            3.80434848162999,
+            3.713656630037276
+          ]
+        },
+        "mean_std": {
+          "mean": 1.0846735900873974,
+          "std": 0.028111347103973672,
+          "min": 1.0525433964418416,
+          "max": 1.1047369150457884,
+          "n": 3,
+          "values": [
+            1.1047369150457884,
+            1.0967404587745617,
+            1.0525433964418416
+          ]
+        }
+      }
+    },
+    "(2, None)": {
+      "n_seeds": 3,
+      "seeds": [
+        7,
+        42,
+        123
+      ],
+      "consistency_tests": {
+        "in_domain_data_only": [
+          {
+            "metric": "a_err",
+            "cv": 0.28922400203811355,
+            "consistent": false,
+            "summary": {
+              "mean": 0.006137659369184621,
+              "std": 0.0017751584059022996,
+              "min": 0.0043095758606125165,
+              "max": 0.00785467707598147,
+              "n": 3,
+              "values": [
+                0.0062487251709598774,
+                0.00785467707598147,
+                0.0043095758606125165
+              ]
+            },
+            "interpretation": "a_err: mean=0.0061, std=0.0018, CV=28.92% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ess_min",
+            "cv": 0.3450009022622145,
+            "consistent": false,
+            "summary": {
+              "mean": 3365.360856037041,
+              "std": 1161.0525317707177,
+              "min": 2557.504313827849,
+              "max": 4695.879023988429,
+              "n": 3,
+              "values": [
+                2842.6992302948443,
+                2557.504313827849,
+                4695.879023988429
+              ]
+            },
+            "interpretation": "ess_min: mean=3365.3609, std=1161.0525, CV=34.50% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "rhat_max",
+            "cv": 0.00018246541814045673,
+            "consistent": true,
+            "summary": {
+              "mean": 1.0005229283129362,
+              "std": 0.00018256083447373413,
+              "min": 1.000347887475493,
+              "max": 1.0007121787036628,
+              "n": 3,
+              "values": [
+                1.0007121787036628,
+                1.0005087187596535,
+                1.000347887475493
+              ]
+            },
+            "interpretation": "rhat_max: mean=1.0005, std=0.0002, CV=0.02% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "coverage_95",
+            "cv": 0.0571689869398944,
+            "consistent": true,
+            "summary": {
+              "mean": 0.9557291666666666,
+              "std": 0.05463806824724283,
+              "min": 0.8935546875,
+              "max": 0.99609375,
+              "n": 3,
+              "values": [
+                0.9775390625,
+                0.99609375,
+                0.8935546875
+              ]
+            },
+            "interpretation": "coverage_95: mean=0.9557, std=0.0546, CV=5.72% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ci_width",
+            "cv": 0.3357390934206976,
+            "consistent": false,
+            "summary": {
+              "mean": 0.10671653013501985,
+              "std": 0.03582891108053412,
+              "min": 0.06955480453225368,
+              "max": 0.14104431269505274,
+              "n": 3,
+              "values": [
+                0.10955047317775313,
+                0.14104431269505274,
+                0.06955480453225368
+              ]
+            },
+            "interpretation": "ci_width: mean=0.1067, std=0.0358, CV=33.57% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "crps_a",
+            "cv": 0.2577626510070093,
+            "consistent": false,
+            "summary": {
+              "mean": 0.013387345097369385,
+              "std": 0.003450757562243622,
+              "min": 0.009884427542733821,
+              "max": 0.01678346317297695,
+              "n": 3,
+              "values": [
+                0.01349414457639739,
+                0.01678346317297695,
+                0.009884427542733821
+              ]
+            },
+            "interpretation": "crps_a: mean=0.0134, std=0.0035, CV=25.78% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "mean_std",
+            "cv": 0.33273222398913405,
+            "consistent": false,
+            "summary": {
+              "mean": 0.027212203510430938,
+              "std": 0.009054376993670607,
+              "min": 0.017827045633434326,
+              "max": 0.035894876615913014,
+              "n": 3,
+              "values": [
+                0.02791468828194548,
+                0.035894876615913014,
+                0.017827045633434326
+              ]
+            },
+            "interpretation": "mean_std: mean=0.0272, std=0.0091, CV=33.27% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "nll_a",
+            "cv": 0.08107403885453067,
+            "consistent": true,
+            "summary": {
+              "mean": -2.345677561084512,
+              "std": 0.19017355372756645,
+              "min": -2.5355813040126067,
+              "max": -2.1552353400881863,
+              "n": 3,
+              "values": [
+                -2.3462160391527425,
+                -2.1552353400881863,
+                -2.5355813040126067
+              ]
+            },
+            "interpretation": "nll_a: mean=-2.3457, std=0.1902, CV=8.11% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "n_div",
+            "cv": 0.916515138991168,
+            "consistent": false,
+            "summary": {
+              "mean": 6.666666666666667,
+              "std": 6.110100926607787,
+              "min": 0.0,
+              "max": 12.0,
+              "n": 3,
+              "values": [
+                8.0,
+                12.0,
+                0.0
+              ]
+            },
+            "interpretation": "n_div: mean=6.6667, std=6.1101, CV=91.65% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_a_err",
+            "cv": 0.21472990025558994,
+            "consistent": false,
+            "summary": {
+              "mean": 0.06189747527241707,
+              "std": 0.013291238691318963,
+              "min": 0.054212648421525955,
+              "max": 0.07724487036466599,
+              "n": 3,
+              "values": [
+                0.054212648421525955,
+                0.054234907031059265,
+                0.07724487036466599
+              ]
+            },
+            "interpretation": "map_a_err: mean=0.0619, std=0.0133, CV=21.47% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "map_u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "chi2_ppc_pvalue",
+            "cv": 0.0051390852018122265,
+            "consistent": true,
+            "summary": {
+              "mean": 0.9970417251313753,
+              "std": 0.0051238823752119845,
+              "min": 0.9911251753941261,
+              "max": 1.0,
+              "n": 3,
+              "values": [
+                1.0,
+                1.0,
+                0.9911251753941261
+              ]
+            },
+            "interpretation": "chi2_ppc_pvalue: mean=0.9970, std=0.0051, CV=0.51% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_rho_error_std",
+            "cv": 0.2584654063013009,
+            "consistent": false,
+            "summary": {
+              "mean": 0.2873049920427723,
+              "std": 0.07425840150072717,
+              "min": 0.20542644928831982,
+              "max": 0.350295076800658,
+              "n": 3,
+              "values": [
+                0.30619345003933907,
+                0.350295076800658,
+                0.20542644928831982
+              ]
+            },
+            "interpretation": "spearman_rho_error_std: mean=0.2873, std=0.0743, CV=25.85% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_pvalue_error_std",
+            "cv": 1.732050807567949,
+            "consistent": false,
+            "summary": {
+              "mean": 1.0705823155344876e-11,
+              "std": 1.8543029641894742e-11,
+              "min": 6.261918467015976e-31,
+              "max": 3.2117469466023153e-11,
+              "n": 3,
+              "values": [
+                1.1475158343425254e-23,
+                6.261918467015976e-31,
+                3.2117469466023153e-11
+              ]
+            },
+            "interpretation": "spearman_pvalue_error_std: mean=0.0000, std=0.0000, CV=173.21% \u2192 INCONSISTENT (threshold 20%)"
+          }
+        ],
+        "in_domain_physics": [
+          {
+            "metric": "a_err",
+            "cv": 0.09309677257634671,
+            "consistent": true,
+            "summary": {
+              "mean": 0.0057063857723526875,
+              "std": 0.0005312460984816188,
+              "min": 0.005205240898272453,
+              "max": 0.006263328538470656,
+              "n": 3,
+              "values": [
+                0.005650587880314953,
+                0.006263328538470656,
+                0.005205240898272453
+              ]
+            },
+            "interpretation": "a_err: mean=0.0057, std=0.0005, CV=9.31% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ess_min",
+            "cv": 0.19876502604908589,
+            "consistent": true,
+            "summary": {
+              "mean": 7960.948792329978,
+              "std": 1582.3581940829067,
+              "min": 6135.630831025543,
+              "max": 8944.447094590229,
+              "n": 3,
+              "values": [
+                8944.447094590229,
+                8802.768451374159,
+                6135.630831025543
+              ]
+            },
+            "interpretation": "ess_min: mean=7960.9488, std=1582.3582, CV=19.88% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "rhat_max",
+            "cv": 0.00017805048463516023,
+            "consistent": true,
+            "summary": {
+              "mean": 1.0004515534258287,
+              "std": 0.0001781308839414677,
+              "min": 1.0003233494513624,
+              "max": 1.0006549515634469,
+              "n": 3,
+              "values": [
+                1.0003763592626773,
+                1.0003233494513624,
+                1.0006549515634469
+              ]
+            },
+            "interpretation": "rhat_max: mean=1.0005, std=0.0002, CV=0.02% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "coverage_95",
+            "cv": 0.14409761488963704,
+            "consistent": true,
+            "summary": {
+              "mean": 0.8876953125,
+              "std": 0.127914777279961,
+              "min": 0.7421875,
+              "max": 0.982421875,
+              "n": 3,
+              "values": [
+                0.9384765625,
+                0.982421875,
+                0.7421875
+              ]
+            },
+            "interpretation": "coverage_95: mean=0.8877, std=0.1279, CV=14.41% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ci_width",
+            "cv": 0.3434271407723963,
+            "consistent": false,
+            "summary": {
+              "mean": 0.08489861964859469,
+              "std": 0.029156490201440056,
+              "min": 0.05515188588322105,
+              "max": 0.11342664850387002,
+              "n": 3,
+              "values": [
+                0.08611732455869298,
+                0.11342664850387002,
+                0.05515188588322105
+              ]
+            },
+            "interpretation": "ci_width: mean=0.0849, std=0.0292, CV=34.34% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "crps_a",
+            "cv": 0.07353972422393942,
+            "consistent": true,
+            "summary": {
+              "mean": 0.012550465617310179,
+              "std": 0.0009229577803790243,
+              "min": 0.011812854315016675,
+              "max": 0.013585453105051742,
+              "n": 3,
+              "values": [
+                0.012253089431862119,
+                0.013585453105051742,
+                0.011812854315016675
+              ]
+            },
+            "interpretation": "crps_a: mean=0.0126, std=0.0009, CV=7.35% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "mean_std",
+            "cv": 0.3433736845380554,
+            "consistent": false,
+            "summary": {
+              "mean": 0.021652941514308594,
+              "std": 0.007435050308855162,
+              "min": 0.014121947200324968,
+              "max": 0.028988181880169495,
+              "n": 3,
+              "values": [
+                0.021848695462431317,
+                0.028988181880169495,
+                0.014121947200324968
+              ]
+            },
+            "interpretation": "mean_std: mean=0.0217, std=0.0074, CV=34.34% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "nll_a",
+            "cv": 0.06573412122616745,
+            "consistent": true,
+            "summary": {
+              "mean": -2.3199278122223697,
+              "std": 0.1524984160445827,
+              "min": -2.447130062159058,
+              "max": -2.1508731069241485,
+              "n": 3,
+              "values": [
+                -2.447130062159058,
+                -2.361780267583903,
+                -2.1508731069241485
+              ]
+            },
+            "interpretation": "nll_a: mean=-2.3199, std=0.1525, CV=6.57% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "n_div",
+            "cv": Infinity,
+            "consistent": false,
+            "summary": {
+              "mean": 0.0,
+              "std": 0.0,
+              "min": 0.0,
+              "max": 0.0,
+              "n": 3,
+              "values": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "interpretation": "n_div: mean=0.0000, std=0.0000, CV=inf% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_a_err",
+            "cv": 0.21472990025558994,
+            "consistent": false,
+            "summary": {
+              "mean": 0.06189747527241707,
+              "std": 0.013291238691318963,
+              "min": 0.054212648421525955,
+              "max": 0.07724487036466599,
+              "n": 3,
+              "values": [
+                0.054212648421525955,
+                0.054234907031059265,
+                0.07724487036466599
+              ]
+            },
+            "interpretation": "map_a_err: mean=0.0619, std=0.0133, CV=21.47% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "map_u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "chi2_ppc_pvalue",
+            "cv": 0.0049529552404427414,
+            "consistent": true,
+            "summary": {
+              "mean": 0.9971485638969302,
+              "std": 0.0049388322050532545,
+              "min": 0.9914456916907903,
+              "max": 1.0,
+              "n": 3,
+              "values": [
+                1.0,
+                1.0,
+                0.9914456916907903
+              ]
+            },
+            "interpretation": "chi2_ppc_pvalue: mean=0.9971, std=0.0049, CV=0.50% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_rho_error_std",
+            "cv": 0.07120177343449842,
+            "consistent": true,
+            "summary": {
+              "mean": 0.37696371042247806,
+              "std": 0.02684048470252915,
+              "min": 0.34605124812245186,
+              "max": 0.39435032365352973,
+              "n": 3,
+              "values": [
+                0.39048955949145264,
+                0.39435032365352973,
+                0.34605124812245186
+              ]
+            },
+            "interpretation": "spearman_rho_error_std: mean=0.3770, std=0.0268, CV=7.12% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_pvalue_error_std",
+            "cv": 1.73205079715281,
+            "consistent": false,
+            "summary": {
+              "mean": 1.177868174951712e-30,
+              "std": 2.0401275113660382e-30,
+              "min": 1.941671350935704e-39,
+              "max": 3.533604510688399e-30,
+              "n": 3,
+              "values": [
+                1.222506546101292e-38,
+                1.941671350935704e-39,
+                3.533604510688399e-30
+              ]
+            },
+            "interpretation": "spearman_pvalue_error_std: mean=0.0000, std=0.0000, CV=173.21% \u2192 INCONSISTENT (threshold 20%)"
+          }
+        ],
+        "ood_data_only": [
+          {
+            "metric": "a_err",
+            "cv": 0.30144272377986353,
+            "consistent": false,
+            "summary": {
+              "mean": 0.08278501873991154,
+              "std": 0.02495494153712598,
+              "min": 0.056876951634995586,
+              "max": 0.10666279484182364,
+              "n": 3,
+              "values": [
+                0.08481530974291537,
+                0.10666279484182364,
+                0.056876951634995586
+              ]
+            },
+            "interpretation": "a_err: mean=0.0828, std=0.0250, CV=30.14% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ess_min",
+            "cv": 1.6788155007437306,
+            "consistent": false,
+            "summary": {
+              "mean": 888.3603040955745,
+              "std": 1491.3930487610648,
+              "min": 2.232456026689558,
+              "max": 2610.2269117174537,
+              "n": 3,
+              "values": [
+                2.232456026689558,
+                52.62154454258031,
+                2610.2269117174537
+              ]
+            },
+            "interpretation": "ess_min: mean=888.3603, std=1491.3930, CV=167.88% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "rhat_max",
+            "cv": 0.6694068996930101,
+            "consistent": false,
+            "summary": {
+              "mean": 1.6760249413655484,
+              "std": 1.121942659807671,
+              "min": 1.0012501545443844,
+              "max": 2.971151637613364,
+              "n": 3,
+              "values": [
+                2.971151637613364,
+                1.0556730319388967,
+                1.0012501545443844
+              ]
+            },
+            "interpretation": "rhat_max: mean=1.6760, std=1.1219, CV=66.94% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "coverage_95",
+            "cv": 0.5474025752971883,
+            "consistent": false,
+            "summary": {
+              "mean": 0.14095052083333334,
+              "std": 0.07715667809364667,
+              "min": 0.064453125,
+              "max": 0.21875,
+              "n": 3,
+              "values": [
+                0.21875,
+                0.1396484375,
+                0.064453125
+              ]
+            },
+            "interpretation": "coverage_95: mean=0.1410, std=0.0772, CV=54.74% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ci_width",
+            "cv": 0.5044239702327212,
+            "consistent": false,
+            "summary": {
+              "mean": 0.129581390213208,
+              "std": 0.06536395931962187,
+              "min": 0.0645994519520749,
+              "max": 0.19532078716836343,
+              "n": 3,
+              "values": [
+                0.19532078716836343,
+                0.1288239315191857,
+                0.0645994519520749
+              ]
+            },
+            "interpretation": "ci_width: mean=0.1296, std=0.0654, CV=50.44% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "crps_a",
+            "cv": 0.30163467479978034,
+            "consistent": false,
+            "summary": {
+              "mean": 0.1534803839734257,
+              "std": 0.046295005707969676,
+              "min": 0.11009502291690557,
+              "max": 0.20221951321491768,
+              "n": 3,
+              "values": [
+                0.14812661578845385,
+                0.20221951321491768,
+                0.11009502291690557
+              ]
+            },
+            "interpretation": "crps_a: mean=0.1535, std=0.0463, CV=30.16% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "mean_std",
+            "cv": 0.5397790608390429,
+            "consistent": false,
+            "summary": {
+              "mean": 0.03474198390881376,
+              "std": 0.018752995445984633,
+              "min": 0.016725281557773426,
+              "max": 0.05415339547503789,
+              "n": 3,
+              "values": [
+                0.05415339547503789,
+                0.03334727469362997,
+                0.016725281557773426
+              ]
+            },
+            "interpretation": "mean_std: mean=0.0347, std=0.0188, CV=53.98% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "nll_a",
+            "cv": 0.7087604900458303,
+            "consistent": false,
+            "summary": {
+              "mean": 15.144561552956622,
+              "std": 10.733866867802776,
+              "min": 3.3099585319407208,
+              "max": 24.25130289467869,
+              "n": 3,
+              "values": [
+                3.3099585319407208,
+                17.87242323225046,
+                24.25130289467869
+              ]
+            },
+            "interpretation": "nll_a: mean=15.1446, std=10.7339, CV=70.88% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "n_div",
+            "cv": 0.9155564280277779,
+            "consistent": false,
+            "summary": {
+              "mean": 48.666666666666664,
+              "std": 44.55707949735186,
+              "min": 20.0,
+              "max": 100.0,
+              "n": 3,
+              "values": [
+                20.0,
+                100.0,
+                26.0
+              ]
+            },
+            "interpretation": "n_div: mean=48.6667, std=44.5571, CV=91.56% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_a_err",
+            "cv": 0.08710938210963003,
+            "consistent": true,
+            "summary": {
+              "mean": 0.2762382924556732,
+              "std": 0.024062946970832968,
+              "min": 0.25665462017059326,
+              "max": 0.3031001389026642,
+              "n": 3,
+              "values": [
+                0.3031001389026642,
+                0.2689601182937622,
+                0.25665462017059326
+              ]
+            },
+            "interpretation": "map_a_err: mean=0.2762, std=0.0241, CV=8.71% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "map_u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "chi2_ppc_pvalue",
+            "cv": 0.00031637332481638825,
+            "consistent": true,
+            "summary": {
+              "mean": 0.9998173751336866,
+              "std": 0.0003163155471802385,
+              "min": 0.9994521254010599,
+              "max": 1.0,
+              "n": 3,
+              "values": [
+                1.0,
+                1.0,
+                0.9994521254010599
+              ]
+            },
+            "interpretation": "chi2_ppc_pvalue: mean=0.9998, std=0.0003, CV=0.03% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_rho_error_std",
+            "cv": 0.07739522563405647,
+            "consistent": true,
+            "summary": {
+              "mean": 0.8784331563073694,
+              "std": 0.06798653233684525,
+              "min": 0.8031206078785493,
+              "max": 0.9352775418425003,
+              "n": 3,
+              "values": [
+                0.8969013192010585,
+                0.8031206078785493,
+                0.9352775418425003
+              ]
+            },
+            "interpretation": "spearman_rho_error_std: mean=0.8784, std=0.0680, CV=7.74% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_pvalue_error_std",
+            "cv": 0.0,
+            "consistent": true,
+            "summary": {
+              "mean": 1.5134463025975194e-232,
+              "std": 0.0,
+              "min": 0.0,
+              "max": 4.540338907792558e-232,
+              "n": 3,
+              "values": [
+                0.0,
+                4.540338907792558e-232,
+                0.0
+              ]
+            },
+            "interpretation": "spearman_pvalue_error_std: mean=0.0000, std=0.0000, CV=0.00% \u2192 CONSISTENT (threshold 20%)"
+          }
+        ],
+        "ood_physics": [
+          {
+            "metric": "a_err",
+            "cv": 0.23418866010996264,
+            "consistent": false,
+            "summary": {
+              "mean": 0.10388473317999099,
+              "std": 0.024328626469303068,
+              "min": 0.0778094378525591,
+              "max": 0.12597452401940187,
+              "n": 3,
+              "values": [
+                0.10787023766801199,
+                0.12597452401940187,
+                0.0778094378525591
+              ]
+            },
+            "interpretation": "a_err: mean=0.1039, std=0.0243, CV=23.42% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ess_min",
+            "cv": 1.5240111707876376,
+            "consistent": false,
+            "summary": {
+              "mean": 770.9861164135309,
+              "std": 1174.991453936399,
+              "min": 5.3425039368227365,
+              "max": 2123.8323093704794,
+              "n": 3,
+              "values": [
+                183.78353593329052,
+                5.3425039368227365,
+                2123.8323093704794
+              ]
+            },
+            "interpretation": "ess_min: mean=770.9861, std=1174.9915, CV=152.40% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "rhat_max",
+            "cv": 0.15706177903830346,
+            "consistent": true,
+            "summary": {
+              "mean": 1.1118077319720303,
+              "std": 0.17462250033206833,
+              "min": 1.001054998967734,
+              "max": 1.3131066523213561,
+              "n": 3,
+              "values": [
+                1.0212615446270006,
+                1.3131066523213561,
+                1.001054998967734
+              ]
+            },
+            "interpretation": "rhat_max: mean=1.1118, std=0.1746, CV=15.71% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "coverage_95",
+            "cv": 0.39045803459757505,
+            "consistent": false,
+            "summary": {
+              "mean": 0.08430989583333333,
+              "std": 0.03291947622420961,
+              "min": 0.0576171875,
+              "max": 0.12109375,
+              "n": 3,
+              "values": [
+                0.07421875,
+                0.12109375,
+                0.0576171875
+              ]
+            },
+            "interpretation": "coverage_95: mean=0.0843, std=0.0329, CV=39.05% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "ci_width",
+            "cv": 0.4814242589975035,
+            "consistent": false,
+            "summary": {
+              "mean": 0.10100743158559411,
+              "std": 0.04862742790433568,
+              "min": 0.059745957902248355,
+              "max": 0.15461914531850368,
+              "n": 3,
+              "values": [
+                0.08865719153603031,
+                0.15461914531850368,
+                0.059745957902248355
+              ]
+            },
+            "interpretation": "ci_width: mean=0.1010, std=0.0486, CV=48.14% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "crps_a",
+            "cv": 0.22127824415137765,
+            "consistent": false,
+            "summary": {
+              "mean": 0.20293712493608349,
+              "std": 0.04490557067898531,
+              "min": 0.1539497777975952,
+              "max": 0.2421511973876704,
+              "n": 3,
+              "values": [
+                0.21271039962298477,
+                0.2421511973876704,
+                0.1539497777975952
+              ]
+            },
+            "interpretation": "crps_a: mean=0.2029, std=0.0449, CV=22.13% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "mean_std",
+            "cv": 0.4845126682772849,
+            "consistent": false,
+            "summary": {
+              "mean": 0.02593406780707194,
+              "std": 0.012565384392488459,
+              "min": 0.015290920597176646,
+              "max": 0.039795632514612496,
+              "n": 3,
+              "values": [
+                0.022715650309426672,
+                0.039795632514612496,
+                0.015290920597176646
+              ]
+            },
+            "interpretation": "mean_std: mean=0.0259, std=0.0126, CV=48.45% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "nll_a",
+            "cv": 0.42881497448692685,
+            "consistent": false,
+            "summary": {
+              "mean": 37.84381993847642,
+              "std": 16.22799668140562,
+              "min": 19.95802726873257,
+              "max": 51.626312508874065,
+              "n": 3,
+              "values": [
+                41.94712003782263,
+                19.95802726873257,
+                51.626312508874065
+              ]
+            },
+            "interpretation": "nll_a: mean=37.8438, std=16.2280, CV=42.88% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "n_div",
+            "cv": 1.0568939366788088,
+            "consistent": false,
+            "summary": {
+              "mean": 55.0,
+              "std": 58.12916651733448,
+              "min": 18.0,
+              "max": 122.0,
+              "n": 3,
+              "values": [
+                25.0,
+                122.0,
+                18.0
+              ]
+            },
+            "interpretation": "n_div: mean=55.0000, std=58.1292, CV=105.69% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_a_err",
+            "cv": 0.08710938210963003,
+            "consistent": true,
+            "summary": {
+              "mean": 0.2762382924556732,
+              "std": 0.024062946970832968,
+              "min": 0.25665462017059326,
+              "max": 0.3031001389026642,
+              "n": 3,
+              "values": [
+                0.3031001389026642,
+                0.2689601182937622,
+                0.25665462017059326
+              ]
+            },
+            "interpretation": "map_a_err: mean=0.2762, std=0.0241, CV=8.71% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "map_u_err",
+            "cv": NaN,
+            "consistent": false,
+            "summary": {
+              "mean": NaN,
+              "std": NaN,
+              "min": NaN,
+              "max": NaN,
+              "n": 0,
+              "values": []
+            },
+            "interpretation": "map_u_err: mean=nan, std=nan, CV=nan% \u2192 INCONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "chi2_ppc_pvalue",
+            "cv": 0.07676154506006555,
+            "consistent": true,
+            "summary": {
+              "mean": 0.9575624603351013,
+              "std": 0.0735039739468401,
+              "min": 0.8726873820456705,
+              "max": 1.0,
+              "n": 3,
+              "values": [
+                0.9999999989596333,
+                1.0,
+                0.8726873820456705
+              ]
+            },
+            "interpretation": "chi2_ppc_pvalue: mean=0.9576, std=0.0735, CV=7.68% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_rho_error_std",
+            "cv": 0.05425498891850009,
+            "consistent": true,
+            "summary": {
+              "mean": 0.8828839064325393,
+              "std": 0.047900856559819495,
+              "min": 0.8473497290966311,
+              "max": 0.9373590833094914,
+              "n": 3,
+              "values": [
+                0.8639429068914956,
+                0.8473497290966311,
+                0.9373590833094914
+              ]
+            },
+            "interpretation": "spearman_rho_error_std: mean=0.8829, std=0.0479, CV=5.43% \u2192 CONSISTENT (threshold 20%)"
+          },
+          {
+            "metric": "spearman_pvalue_error_std",
+            "cv": 0.0,
+            "consistent": true,
+            "summary": {
+              "mean": 1.1690202060038012e-283,
+              "std": 0.0,
+              "min": 0.0,
+              "max": 3.507060618011404e-283,
+              "n": 3,
+              "values": [
+                9.617625665583934e-307,
+                3.507060618011404e-283,
+                0.0
+              ]
+            },
+            "interpretation": "spearman_pvalue_error_std: mean=0.0000, std=0.0000, CV=0.00% \u2192 CONSISTENT (threshold 20%)"
+          }
+        ]
+      },
+      "comparison_robustness": {
+        "condition_a": "ood_data_only",
+        "condition_b": "ood_physics",
+        "tests": [
+          {
+            "metric": "a_err",
+            "differences": [
+              -0.023054927925096613,
+              -0.01931172917757823,
+              -0.020932486217563516
+            ],
+            "mean_diff": -0.021099714440079454,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "a_err diff (ood_data_only - ood_physics): mean=-0.0211, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only < ood_physics)"
+          },
+          {
+            "metric": "u_err",
+            "differences": [],
+            "mean_diff": NaN,
+            "sign_consistent": false,
+            "wilcoxon_stat": NaN,
+            "wilcoxon_p": NaN,
+            "interpretation": "u_err: no non-None values to compare"
+          },
+          {
+            "metric": "ess_min",
+            "differences": [
+              -181.55107990660096,
+              47.27904060575757,
+              486.39460234697435
+            ],
+            "mean_diff": 117.37418768204365,
+            "sign_consistent": false,
+            "wilcoxon_stat": 2.0,
+            "wilcoxon_p": 0.75,
+            "interpretation": "ess_min diff (ood_data_only - ood_physics): mean=117.3742, sign_consistent=False, Wilcoxon p=0.750 \u2192 NOT ROBUST (ood_data_only > ood_physics)"
+          },
+          {
+            "metric": "rhat_max",
+            "differences": [
+              1.9498900929863636,
+              -0.2574336203824594,
+              0.0001951555766503965
+            ],
+            "mean_diff": 0.5642172093935182,
+            "sign_consistent": false,
+            "wilcoxon_stat": 2.0,
+            "wilcoxon_p": 0.75,
+            "interpretation": "rhat_max diff (ood_data_only - ood_physics): mean=0.5642, sign_consistent=False, Wilcoxon p=0.750 \u2192 NOT ROBUST (ood_data_only > ood_physics)"
+          },
+          {
+            "metric": "coverage_95",
+            "differences": [
+              0.14453125,
+              0.0185546875,
+              0.0068359375
+            ],
+            "mean_diff": 0.056640625,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "coverage_95 diff (ood_data_only - ood_physics): mean=0.0566, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only > ood_physics)"
+          },
+          {
+            "metric": "ci_width",
+            "differences": [
+              0.10666359563233312,
+              -0.025795213799317984,
+              0.004853494049826539
+            ],
+            "mean_diff": 0.028573958627613888,
+            "sign_consistent": false,
+            "wilcoxon_stat": 2.0,
+            "wilcoxon_p": 0.75,
+            "interpretation": "ci_width diff (ood_data_only - ood_physics): mean=0.0286, sign_consistent=False, Wilcoxon p=0.750 \u2192 NOT ROBUST (ood_data_only > ood_physics)"
+          },
+          {
+            "metric": "crps_a",
+            "differences": [
+              -0.06458378383453092,
+              -0.039931684172752724,
+              -0.04385475488068963
+            ],
+            "mean_diff": -0.04945674096265776,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "crps_a diff (ood_data_only - ood_physics): mean=-0.0495, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only < ood_physics)"
+          },
+          {
+            "metric": "mean_std",
+            "differences": [
+              0.03143774516561122,
+              -0.006448357820982527,
+              0.00143436096059678
+            ],
+            "mean_diff": 0.008807916101741824,
+            "sign_consistent": false,
+            "wilcoxon_stat": 2.0,
+            "wilcoxon_p": 0.75,
+            "interpretation": "mean_std diff (ood_data_only - ood_physics): mean=0.0088, sign_consistent=False, Wilcoxon p=0.750 \u2192 NOT ROBUST (ood_data_only > ood_physics)"
+          },
+          {
+            "metric": "nll_a",
+            "differences": [
+              -38.637161505881906,
+              -2.0856040364821133,
+              -27.375009614195374
+            ],
+            "mean_diff": -22.699258385519798,
+            "sign_consistent": true,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.25,
+            "interpretation": "nll_a diff (ood_data_only - ood_physics): mean=-22.6993, sign_consistent=True, Wilcoxon p=0.250 \u2192 ROBUST (ood_data_only < ood_physics)"
+          },
+          {
+            "metric": "n_div",
+            "differences": [
+              -5.0,
+              -22.0,
+              8.0
+            ],
+            "mean_diff": -6.333333333333333,
+            "sign_consistent": false,
+            "wilcoxon_stat": 2.0,
+            "wilcoxon_p": 0.75,
+            "interpretation": "n_div diff (ood_data_only - ood_physics): mean=-6.3333, sign_consistent=False, Wilcoxon p=0.750 \u2192 NOT ROBUST (ood_data_only < ood_physics)"
+          },
+          {
+            "metric": "map_a_err",
+            "differences": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mean_diff": 0.0,
+            "sign_consistent": false,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 1.0,
+            "interpretation": "map_a_err diff (ood_data_only - ood_physics): mean=0.0000, sign_consistent=False, Wilcoxon p=1.000 \u2192 NOT ROBUST (ood_data_only < ood_physics)"
+          },
+          {
+            "metric": "map_u_err",
+            "differences": [],
+            "mean_diff": NaN,
+            "sign_consistent": false,
+            "wilcoxon_stat": NaN,
+            "wilcoxon_p": NaN,
+            "interpretation": "map_u_err: no non-None values to compare"
+          },
+          {
+            "metric": "chi2_ppc_pvalue",
+            "differences": [
+              1.040366681692717e-09,
+              0.0,
+              0.12676474335538934
+            ],
+            "mean_diff": 0.04225491479858534,
+            "sign_consistent": false,
+            "wilcoxon_stat": 0.0,
+            "wilcoxon_p": 0.5,
+            "interpretation": "chi2_ppc_pvalue diff (ood_data_only - ood_physics): mean=0.0423, sign_consistent=False, Wilcoxon p=0.500 \u2192 NOT ROBUST (ood_data_only > ood_physics)"
+          },
+          {
+            "metric": "spearman_rho_error_std",
+            "differences": [
+              0.03295841230956298,
+              -0.04422912121808176,
+              -0.0020815414669910215
+            ],
+            "mean_diff": -0.004450750125169933,
+            "sign_consistent": false,
+            "wilcoxon_stat": 2.0,
+            "wilcoxon_p": 0.75,
+            "interpretation": "spearman_rho_error_std diff (ood_data_only - ood_physics): mean=-0.0045, sign_consistent=False, Wilcoxon p=0.750 \u2192 NOT ROBUST (ood_data_only < ood_physics)"
+          },
+          {
+            "metric": "spearman_pvalue_error_std",
+            "differences": [
+              -9.617625665583934e-307,
+              4.540338907792558e-232,
+              0.0
+            ],
+            "mean_diff": 1.5134463025975194e-232,
+            "sign_consistent": false,
+            "wilcoxon_stat": 1.0,
+            "wilcoxon_p": 1.0,
+            "interpretation": "spearman_pvalue_error_std diff (ood_data_only - ood_physics): mean=0.0000, sign_consistent=False, Wilcoxon p=1.000 \u2192 NOT ROBUST (ood_data_only > ood_physics)"
+          }
+        ]
+      },
+      "prior_summaries": {
+        "a_err": {
+          "mean": 0.3178579906622569,
+          "std": 0.014757961720630302,
+          "min": 0.3029334247112274,
+          "max": 0.332443505525589,
+          "n": 3,
+          "values": [
+            0.332443505525589,
+            0.3181970417499542,
+            0.3029334247112274
+          ]
+        },
+        "crps_a": {
+          "mean": 0.7779493489104491,
+          "std": 0.04498164894314557,
+          "min": 0.7353393017843192,
+          "max": 0.8249766712544576,
+          "n": 3,
+          "values": [
+            0.8249766712544576,
+            0.7735320736925708,
+            0.7353393017843192
+          ]
+        },
+        "coverage_95": {
+          "mean": 0.9977213541666666,
+          "std": 0.003946730355788458,
+          "min": 0.9931640625,
+          "max": 1.0,
+          "n": 3,
+          "values": [
+            0.9931640625,
+            1.0,
+            1.0
+          ]
+        },
+        "ci_width": {
+          "mean": 3.785806886823987,
+          "std": 0.06489737641731051,
+          "min": 3.713656630037276,
+          "max": 3.8394155488046953,
+          "n": 3,
+          "values": [
+            3.8394155488046953,
+            3.80434848162999,
+            3.713656630037276
+          ]
+        },
+        "mean_std": {
+          "mean": 1.0846735900873974,
+          "std": 0.028111347103973672,
+          "min": 1.0525433964418416,
+          "max": 1.1047369150457884,
+          "n": 3,
+          "values": [
+            1.1047369150457884,
+            1.0967404587745617,
+            1.0525433964418416
+          ]
+        }
+      },
+      "prior_ood_summaries": {
+        "a_err": {
+          "mean": 0.28233034412066144,
+          "std": 0.0028116309313868195,
+          "min": 0.27936771512031555,
+          "max": 0.28496161103248596,
+          "n": 3,
+          "values": [
+            0.28266170620918274,
+            0.28496161103248596,
+            0.27936771512031555
+          ]
+        },
+        "crps_a": {
+          "mean": 0.5053846345578742,
+          "std": 0.008008551440643634,
+          "min": 0.49616299140093,
+          "max": 0.5105936779112121,
+          "n": 3,
+          "values": [
+            0.5093972343614804,
+            0.5105936779112121,
+            0.49616299140093
+          ]
+        },
+        "coverage_95": {
+          "mean": 1.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0,
+          "n": 3,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "ci_width": {
+          "mean": 3.785806886823987,
+          "std": 0.06489737641731051,
+          "min": 3.713656630037276,
+          "max": 3.8394155488046953,
+          "n": 3,
+          "values": [
+            3.8394155488046953,
+            3.80434848162999,
+            3.713656630037276
+          ]
+        },
+        "mean_std": {
+          "mean": 1.0846735900873974,
+          "std": 0.028111347103973672,
+          "min": 1.0525433964418416,
+          "max": 1.1047369150457884,
+          "n": 3,
+          "values": [
+            1.1047369150457884,
+            1.0967404587745617,
+            1.0525433964418416
+          ]
+        }
+      }
+    }
+  },
+  "cross_instance": {
+    "in_domain_data_only": {
+      "a_err": {
+        "mean": 0.005046943401449225,
+        "std": 0.0009465161117981778,
+        "n": 3,
+        "values": [
+          0.00444119702309369,
+          0.004561973812069363,
+          0.006137659369184621
+        ]
+      },
+      "u_err": {
+        "mean": NaN,
+        "std": NaN,
+        "n": 0,
+        "values": []
+      },
+      "ess_min": {
+        "mean": 3534.7495394147004,
+        "std": 205.2457019516494,
+        "n": 3,
+        "values": [
+          3762.9931884070224,
+          3475.8945738000366,
+          3365.360856037041
+        ]
+      },
+      "rhat_max": {
+        "mean": 1.0008455206871616,
+        "std": 0.0003140622645006148,
+        "n": 3,
+        "values": [
+          1.0011502941409474,
+          1.0008633396076012,
+          1.0005229283129362
+        ]
+      },
+      "coverage_95": {
+        "mean": 0.9674479166666666,
+        "std": 0.024647323172117114,
+        "n": 3,
+        "values": [
+          0.9508463541666666,
+          0.9957682291666666,
+          0.9557291666666666
+        ]
+      },
+      "ci_width": {
+        "mean": 0.10125197265655107,
+        "std": 0.01630863434823696,
+        "n": 3,
+        "values": [
+          0.0829127879786664,
+          0.11412659985596697,
+          0.10671653013501985
+        ]
+      },
+      "crps_a": {
+        "mean": 0.01143729537018516,
+        "std": 0.0017201269835241915,
+        "n": 3,
+        "values": [
+          0.01013544274525754,
+          0.010789098267928553,
+          0.013387345097369385
+        ]
+      },
+      "mean_std": {
+        "mean": 0.025801303693477325,
+        "std": 0.004111697581778328,
+        "n": 3,
+        "values": [
+          0.02116990443689477,
+          0.029021803133106264,
+          0.027212203510430938
+        ]
+      },
+      "nll_a": {
+        "mean": -2.4682979688552265,
+        "std": 0.10948767504293537,
+        "n": 3,
+        "values": [
+          -2.5562676491967182,
+          -2.502948696284449,
+          -2.345677561084512
+        ]
+      },
+      "n_div": {
+        "mean": 4.111111111111112,
+        "std": 2.268953095184682,
+        "n": 3,
+        "values": [
+          2.3333333333333335,
+          3.3333333333333335,
+          6.666666666666667
+        ]
+      },
+      "map_a_err": {
+        "mean": 0.06364089705877833,
+        "std": 0.011679900731322272,
+        "n": 3,
+        "values": [
+          0.052930706491072975,
+          0.07609450941284497,
+          0.06189747527241707
+        ]
+      },
+      "map_u_err": {
+        "mean": NaN,
+        "std": NaN,
+        "n": 0,
+        "values": []
+      },
+      "chi2_ppc_pvalue": {
+        "mean": 0.9958189508959929,
+        "std": 0.004908037037562166,
+        "n": 3,
+        "values": [
+          0.9904151275566034,
+          1.0,
+          0.9970417251313753
+        ]
+      },
+      "spearman_rho_error_std": {
+        "mean": 0.2899288593050886,
+        "std": 0.0023863256280317845,
+        "n": 3,
+        "values": [
+          0.29051206771690147,
+          0.2919695181555921,
+          0.2873049920427723
+        ]
+      },
+      "spearman_pvalue_error_std": {
+        "mean": 3.568633902213529e-12,
+        "std": 6.180987204848266e-12,
+        "n": 3,
+        "values": [
+          2.3855381595232375e-17,
+          5.4695914115968625e-17,
+          1.0705823155344876e-11
+        ]
+      }
+    },
+    "in_domain_physics": {
+      "a_err": {
+        "mean": 0.01597930505681774,
+        "std": 0.019221649466715195,
+        "n": 3,
+        "values": [
+          0.004076922154662987,
+          0.03815460724343755,
+          0.0057063857723526875
+        ]
+      },
+      "u_err": {
+        "mean": NaN,
+        "std": NaN,
+        "n": 0,
+        "values": []
+      },
+      "ess_min": {
+        "mean": 7175.711465961119,
+        "std": 1636.560317817497,
+        "n": 3,
+        "values": [
+          8271.676502073684,
+          5294.509103479697,
+          7960.948792329978
+        ]
+      },
+      "rhat_max": {
+        "mean": 4.215248197468072,
+        "std": 5.568270929083248,
+        "n": 3,
+        "values": [
+          1.0003594020764772,
+          10.644933636901913,
+          1.0004515534258287
+        ]
+      },
+      "coverage_95": {
+        "mean": 0.9237196180555555,
+        "std": 0.038065529016826666,
+        "n": 3,
+        "values": [
+          0.919921875,
+          0.9635416666666666,
+          0.8876953125
+        ]
+      },
+      "ci_width": {
+        "mean": 0.168943709951226,
+        "std": 0.15931947869886542,
+        "n": 3,
+        "values": [
+          0.06924464986927055,
+          0.3526878603358128,
+          0.08489861964859469
+        ]
+      },
+      "crps_a": {
+        "mean": 0.026964901557884825,
+        "std": 0.02785637293679996,
+        "n": 3,
+        "values": [
+          0.009269397978502446,
+          0.059074841077841854,
+          0.012550465617310179
+        ]
+      },
+      "mean_std": {
+        "mean": 0.058946378040916764,
+        "std": 0.06806920434747316,
+        "n": 3,
+        "values": [
+          0.017673848357296944,
+          0.13751234425114475,
+          0.021652941514308594
+        ]
+      },
+      "nll_a": {
+        "mean": -2.190073032963289,
+        "std": 0.5069948789818605,
+        "n": 3,
+        "values": [
+          -2.61951100371159,
+          -1.6307802829559073,
+          -2.3199278122223697
+        ]
+      },
+      "n_div": {
+        "mean": 0.0,
+        "std": 0.0,
+        "n": 3,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "map_a_err": {
+        "mean": 0.06364089705877833,
+        "std": 0.011679900731322272,
+        "n": 3,
+        "values": [
+          0.052930706491072975,
+          0.07609450941284497,
+          0.06189747527241707
+        ]
+      },
+      "map_u_err": {
+        "mean": NaN,
+        "std": NaN,
+        "n": 0,
+        "values": []
+      },
+      "chi2_ppc_pvalue": {
+        "mean": 0.8845266235269248,
+        "std": 0.188708376033844,
+        "n": 3,
+        "values": [
+          0.9897646400171777,
+          0.6666666666666666,
+          0.9971485638969302
+        ]
+      },
+      "spearman_rho_error_std": {
+        "mean": 0.3900475558595395,
+        "std": 0.18724206532588392,
+        "n": 3,
+        "values": [
+          0.20969057336742722,
+          0.5834883837887131,
+          0.37696371042247806
+        ]
+      },
+      "spearman_pvalue_error_std": {
+        "mean": 6.247357204117305e-06,
+        "std": 1.082074009056262e-05,
+        "n": 3,
+        "values": [
+          1.8742071612351914e-05,
+          4.33168665928721e-39,
+          1.177868174951712e-30
+        ]
+      }
+    },
+    "ood_data_only": {
+      "a_err": {
+        "mean": 0.07609481843223016,
+        "std": 0.00860778883197981,
+        "n": 3,
+        "values": [
+          0.07911563875058213,
+          0.06638379780619684,
+          0.08278501873991154
+        ]
+      },
+      "u_err": {
+        "mean": NaN,
+        "std": NaN,
+        "n": 0,
+        "values": []
+      },
+      "ess_min": {
+        "mean": 610.347727435539,
+        "std": 526.3289730366087,
+        "n": 3,
+        "values": [
+          939.3734286873308,
+          3.3094495237118338,
+          888.3603040955745
+        ]
+      },
+      "rhat_max": {
+        "mean": 1.8879718645939156,
+        "std": 0.7576975984511523,
+        "n": 3,
+        "values": [
+          1.258816407582825,
+          2.7290742448333734,
+          1.6760249413655484
+        ]
+      },
+      "coverage_95": {
+        "mean": 0.2338324652777778,
+        "std": 0.2196832358260622,
+        "n": 3,
+        "values": [
+          0.07584635416666667,
+          0.4847005208333333,
+          0.14095052083333334
+        ]
+      },
+      "ci_width": {
+        "mean": 0.15337817137200116,
+        "std": 0.06888998746300892,
+        "n": 3,
+        "values": [
+          0.09954137139478714,
+          0.23101175250800832,
+          0.129581390213208
+        ]
+      },
+      "crps_a": {
+        "mean": 0.13772740209646253,
+        "std": 0.025314760627387103,
+        "n": 3,
+        "values": [
+          0.15117507062816787,
+          0.10852675168779409,
+          0.1534803839734257
+        ]
+      },
+      "mean_std": {
+        "mean": 0.04079757126188759,
+        "std": 0.020238352173984186,
+        "n": 3,
+        "values": [
+          0.024278285998716412,
+          0.0633724438781326,
+          0.03474198390881376
+        ]
+      },
+      "nll_a": {
+        "mean": 13.95640857081743,
+        "std": 12.046067839762502,
+        "n": 3,
+        "values": [
+          25.36437231332628,
+          1.36029184616939,
+          15.144561552956622
+        ]
+      },
+      "n_div": {
+        "mean": 64.77777777777777,
+        "std": 20.60834063440586,
+        "n": 3,
+        "values": [
+          88.0,
+          57.666666666666664,
+          48.666666666666664
+        ]
+      },
+      "map_a_err": {
+        "mean": 0.28026742736498517,
+        "std": 0.016510500180192098,
+        "n": 3,
+        "values": [
+          0.26614442467689514,
+          0.2984195649623871,
+          0.2762382924556732
+        ]
+      },
+      "map_u_err": {
+        "mean": NaN,
+        "std": NaN,
+        "n": 0,
+        "values": []
+      },
+      "chi2_ppc_pvalue": {
+        "mean": 0.9999378629359671,
+        "std": 0.00010436267023951061,
+        "n": 3,
+        "values": [
+          0.9999962136742147,
+          1.0,
+          0.9998173751336866
+        ]
+      },
+      "spearman_rho_error_std": {
+        "mean": 0.8995606922390703,
+        "std": 0.0365084177246252,
+        "n": 3,
+        "values": [
+          0.941716943232482,
+          0.8785319771773596,
+          0.8784331563073694
+        ]
+      },
+      "spearman_pvalue_error_std": {
+        "mean": 5.044821008658398e-233,
+        "std": 0.0,
+        "n": 3,
+        "values": [
+          0.0,
+          2.310752373708403e-274,
+          1.5134463025975194e-232
+        ]
+      }
+    },
+    "ood_physics": {
+      "a_err": {
+        "mean": 0.09979431325966913,
+        "std": 0.004580827053628029,
+        "n": 3,
+        "values": [
+          0.10065346642278084,
+          0.09484474017623555,
+          0.10388473317999099
+        ]
+      },
+      "u_err": {
+        "mean": NaN,
+        "std": NaN,
+        "n": 0,
+        "values": []
+      },
+      "ess_min": {
+        "mean": 668.8234866170327,
+        "std": 94.11859959359826,
+        "n": 3,
+        "values": [
+          585.6421936150867,
+          649.8421498224803,
+          770.9861164135309
+        ]
+      },
+      "rhat_max": {
+        "mean": 2.316269448406624,
+        "std": 2.139763589145423,
+        "n": 3,
+        "values": [
+          1.0502010271547355,
+          4.786799586093106,
+          1.1118077319720303
+        ]
+      },
+      "coverage_95": {
+        "mean": 0.10731336805555557,
+        "std": 0.06808393582975374,
+        "n": 3,
+        "values": [
+          0.0537109375,
+          0.18391927083333334,
+          0.08430989583333333
+        ]
+      },
+      "ci_width": {
+        "mean": 0.10648334745178419,
+        "std": 0.04144462173827965,
+        "n": 3,
+        "values": [
+          0.06804889435396086,
+          0.15039371641579757,
+          0.10100743158559411
+        ]
+      },
+      "crps_a": {
+        "mean": 0.19282702704701846,
+        "std": 0.015072256543467681,
+        "n": 3,
+        "values": [
+          0.2000403259055622,
+          0.17550363029940966,
+          0.20293712493608349
+        ]
+      },
+      "mean_std": {
+        "mean": 0.02996469866025454,
+        "std": 0.015055367259562089,
+        "n": 3,
+        "values": [
+          0.01733489221933229,
+          0.04662513595435938,
+          0.02593406780707194
+        ]
+      },
+      "nll_a": {
+        "mean": 40.78118262639324,
+        "std": 25.37177265899061,
+        "n": 3,
+        "values": [
+          67.49378944142744,
+          17.005938499275857,
+          37.84381993847642
+        ]
+      },
+      "n_div": {
+        "mean": 29.0,
+        "std": 22.516660498395403,
+        "n": 3,
+        "values": [
+          16.0,
+          16.0,
+          55.0
+        ]
+      },
+      "map_a_err": {
+        "mean": 0.28026742736498517,
+        "std": 0.016510500180192098,
+        "n": 3,
+        "values": [
+          0.26614442467689514,
+          0.2984195649623871,
+          0.2762382924556732
+        ]
+      },
+      "map_u_err": {
+        "mean": NaN,
+        "std": NaN,
+        "n": 0,
+        "values": []
+      },
+      "chi2_ppc_pvalue": {
+        "mean": 0.980688188793886,
+        "std": 0.021471684469142938,
+        "n": 3,
+        "values": [
+          0.9845093641648731,
+          0.9999927418816833,
+          0.9575624603351013
+        ]
+      },
+      "spearman_rho_error_std": {
+        "mean": 0.8693856630327667,
+        "std": 0.027181875082667135,
+        "n": 3,
+        "values": [
+          0.8871763539207972,
+          0.8380967287449632,
+          0.8828839064325393
+        ]
+      },
+      "spearman_pvalue_error_std": {
+        "mean": 1.8316305698125066e-252,
+        "std": 0.0,
+        "n": 3,
+        "values": [
+          9.302327904313215e-301,
+          5.4948917094375195e-252,
+          1.1690202060038012e-283
+        ]
+      }
+    }
+  }
+}

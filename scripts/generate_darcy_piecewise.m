@@ -93,8 +93,7 @@ fprintf('\nGenerating training data    (N=%5d, tau=%g, seed=%d)...\n', N_train, 
     tau_in, seed_train);
 
 fprintf('Generating in-dist test     (N=%5d, tau=%g, seed=%d)...\n', N_test, tau_in, seed_test_in);
-[coe_test_in, u_test_in] = gen_samples(N_test, k_low, k_high, res_coe, ...
-    nodes, elems, free, f_load, elem_cx, elem_cy, X, Y, F_interp, ...
+[coe_test_in, u_test_in] = gen_samples(N_test, k_low, k_high, res_coe, ... nodes, elems, free, f_load, elem_cx, elem_cy, X, Y, F_interp, ...
     tau_in, seed_test_in);
 
 fprintf('Generating out-of-dist test (N=%5d, tau=%g, seed=%d)...\n', N_test, tau_out, seed_test_out);
