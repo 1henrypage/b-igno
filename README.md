@@ -51,7 +51,7 @@ b-igno/
 **Prerequisites:** Python 3.11, a CUDA-capable GPU, and [`uv`](https://docs.astral.sh/uv/).
 
 ```bash
-git clone <repo-url> b-igno
+git clone https://github.com/1henrypage/b-igno b-igno
 cd b-igno
 uv sync --extra dev
 ```
