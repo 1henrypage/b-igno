@@ -63,6 +63,10 @@ uv sync --extra dev
 
 The clone is approximately 1 GB because pre-trained checkpoints and datasets are included.
 
+## Data
+
+Full datasets are available on [Google Drive](https://drive.google.com/drive/folders/1oIS-415hzStFDywAWu1mdApWfSE70bhq?usp=sharing). Download and place the contents into `data/`.
+
 ## Training
 
 Pre-trained checkpoints are included in `runs/`. To train from scratch:
